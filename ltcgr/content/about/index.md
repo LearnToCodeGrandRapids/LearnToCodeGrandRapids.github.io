@@ -1,7 +1,7 @@
 +++
 date = "2016-09-01"
 title = "About"
-menu = "nav"
+menu = "main"
 +++
 
 ### Mission
