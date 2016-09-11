@@ -1,0 +1,36 @@
+/* LAYOUT */
+
+.clear {
+  clear: both;
+}
+
+/* THEME */
+
+.theme-ltcgr .sidebar {
+  background-color: #00A89D;
+}
+.theme-ltcgr .content a,
+.theme-ltcgr .related-posts li a:hover {
+  color: #00A89D;
+}
+
+
+/* SIDEBAR */
+
+.sidebar-nav-icons {
+  padding: 0;
+  height: 1em;
+}
+
+.sidebar-nav-icons li {
+  float: left;
+  list-style-type: none;
+  padding-right: 5px;
+}
+
+.sidebar-nav-icons img {
+  margin: 3px 5px 0;
+  float: right;
+  width: 1.6em;
+} 
+

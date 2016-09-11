@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community-rsses on Learn to Code Grand Rapids</title>
+    <link>http://ltcgr.com/community/index.xml</link>
+    <description>Recent content in Community-rsses on Learn to Code Grand Rapids</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://ltcgr.com/community/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Community</title>
+      <link>http://ltcgr.com/community/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ltcgr.com/community/</guid>
+      <description>
+
+&lt;p&gt;We are very lucky to have such a thriving tech community in West Michigan.&lt;/p&gt;
+
+&lt;h2 id=&#34;get-connected&#34;&gt;Get Connected&lt;/h2&gt;
+
+&lt;h3 id=&#34;slack&#34;&gt;Slack&lt;/h3&gt;
+
+&lt;p&gt;On the Grand Rapids Slack server you will find many tech channels, including one for this group (#learn-to-code). Here you can interact with other living, breathing humans in our area.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://slackin-grandrapids.herokuapp.com/&#34;&gt;Sign up&lt;/a&gt; or &lt;a href=&#34;https://grandrapids.slack.com&#34;&gt;Login&lt;/a&gt; if you already have an account.&lt;/p&gt;
+
+&lt;h3 id=&#34;conga&#34;&gt;Conga&lt;/h3&gt;
+
+&lt;p&gt;Conga provides an aggregated calendar for tech events happening in the area. This list is managed by people so if your favorite meetup is not listed contact the organizer to get it on the calendar.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://conga-wm.org/calendar/&#34;&gt;View the Conga calendar&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;get-involved&#34;&gt;Get Involved&lt;/h2&gt;
+
+&lt;p&gt;[bitcamp]&lt;/p&gt;
+
+&lt;h2 id=&#34;conferences&#34;&gt;Conferences&lt;/h2&gt;
+
+&lt;h3 id=&#34;gr-dev-day-night&#34;&gt;GR Dev Day / Night&lt;/h3&gt;
+
+&lt;h3 id=&#34;glsec&#34;&gt;GLSEC&lt;/h3&gt;
+
+&lt;h3 id=&#34;big-data-ignite&#34;&gt;Big Data Ignite&lt;/h3&gt;
+
+&lt;h3 id=&#34;kalamazoo-x&#34;&gt;Kalamazoo X&lt;/h3&gt;
+
+&lt;h3 id=&#34;barcamp&#34;&gt;BarCamp&lt;/h3&gt;
+
+&lt;h2 id=&#34;meetups&#34;&gt;Meetups&lt;/h2&gt;
+
+&lt;h3 id=&#34;grand-rapids-salesforce-developer-group&#34;&gt;Grand Rapids Salesforce Developer Group&lt;/h3&gt;
+
+&lt;h3 id=&#34;gamedevgr&#34;&gt;GameDevGR&lt;/h3&gt;
+
+&lt;h3 id=&#34;west-michigan-content-strategy-meetup&#34;&gt;West Michigan Content Strategy Meetup&lt;/h3&gt;
+
+&lt;h3 id=&#34;grand-rapids-functional-programming&#34;&gt;Grand Rapids Functional Programming&lt;/h3&gt;
+
+&lt;h3 id=&#34;grupal-grand-rapids-drupal-users&#34;&gt;Grupal - Grand Rapids Drupal Users&lt;/h3&gt;
+
+&lt;h3 id=&#34;ladies-that-ux-grand-rapids&#34;&gt;Ladies that UX Grand Rapids&lt;/h3&gt;
+
+&lt;h3 id=&#34;big-data-and-hadoop-users-group-of-west-michigan&#34;&gt;Big Data and Hadoop Users Group of West Michigan&lt;/h3&gt;
+
+&lt;h3 id=&#34;devops-west-michigan&#34;&gt;DevOps West Michigan&lt;/h3&gt;
+
+&lt;h3 id=&#34;girl-develop-it-grand-rapids&#34;&gt;Girl Develop It Grand Rapids&lt;/h3&gt;
+
+&lt;h3 id=&#34;grpug-grand-rapids-python-users-group&#34;&gt;GRPUG - Grand Rapids Python Users Group&lt;/h3&gt;
+
+&lt;h3 id=&#34;west-michigan-r-users-group&#34;&gt;West Michigan R Users Group&lt;/h3&gt;
+
+&lt;h3 id=&#34;gr-testers&#34;&gt;GR Testers&lt;/h3&gt;
+
+&lt;h3 id=&#34;grand-rapids-java-users-group&#34;&gt;Grand Rapids Java Users Group&lt;/h3&gt;
+
+&lt;h3 id=&#34;grwebdev-grand-rapids-web-development-group&#34;&gt;GRWebDev - Grand Rapids Web Development Group&lt;/h3&gt;
+
+&lt;h3 id=&#34;software-gr-and-glsec&#34;&gt;Software GR and GLSEC&lt;/h3&gt;
+
+&lt;h3 id=&#34;west-michigan-cloud-computing&#34;&gt;West Michigan Cloud Computing&lt;/h3&gt;
+
+&lt;h3 id=&#34;embedded-gr&#34;&gt;Embedded GR&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

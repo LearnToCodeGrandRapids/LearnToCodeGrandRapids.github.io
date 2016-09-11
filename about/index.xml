@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About-rsses on Learn to Code Grand Rapids</title>
+    <link>http://ltcgr.com/about/index.xml</link>
+    <description>Recent content in About-rsses on Learn to Code Grand Rapids</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://ltcgr.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://ltcgr.com/about/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ltcgr.com/about/</guid>
+      <description>
+
+&lt;h3 id=&#34;mission&#34;&gt;Mission&lt;/h3&gt;
+
+&lt;p&gt;Learn to Code Grand Rapids is a group for people learning to code. Whether you are a first timer just getting your feet wet, someone trying to break into the industry, or a seasoned veteran looking to hone your skills and pass on knowledge to the next generation of coders. Your personal and professional development are important to us. We don&amp;rsquo;t just want to see you learn to code, we want to help you get that first job and then that big promotion.&lt;/p&gt;
+
+&lt;h3 id=&#34;strategy&#34;&gt;Strategy&lt;/h3&gt;
+
+&lt;p&gt;We focus not only on coding skills, but also on what we consider timeless skills that provide a solid foundation for any software developer.&lt;/p&gt;
+
+&lt;h4 id=&#34;timeless-skills&#34;&gt;Timeless Skills&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Software Design&lt;/li&gt;
+&lt;li&gt;Tools (source control, build, editors, servers, etc&amp;hellip;)&lt;/li&gt;
+&lt;li&gt;Data Storage&lt;/li&gt;
+&lt;li&gt;Refactoring&lt;/li&gt;
+&lt;li&gt;Debugging&lt;/li&gt;
+&lt;li&gt;Testing&lt;/li&gt;
+&lt;li&gt;Networking&lt;/li&gt;
+&lt;li&gt;Security&lt;/li&gt;
+&lt;li&gt;Technical Writing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;coding-skills&#34;&gt;Coding Skills&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Languages&lt;/li&gt;
+&lt;li&gt;Reading Specifications&lt;/li&gt;
+&lt;li&gt;Writing and Teaching&lt;/li&gt;
+&lt;li&gt;Reading Code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
+
+&lt;p&gt;In December of 2014 Theo Voss created the Learn to Code Grand Rapids group to help people interested in coding figure out what to learn and to explain coding terminology. Meetups consisted of a mix of presentations, workshops, and recommendations on other Meetups happening each month.&lt;/p&gt;
+
+&lt;p&gt;Jeffrey Fuller took over the group in September of 2016. His combination of industry experience, and love of learning made him a natural choice. While the group continued to focus on its mission, a new emphasis on professional development was added.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
