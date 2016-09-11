@@ -165,3 +165,11 @@
     </a>
 </li>
 {{- end }}
+
+{{ with .Site.Params.social.meetup -}}
+<li>
+    <a href="https://www.meetup.com/{{ $.Site.Params.social.meetup }}/" title="{{ $.Site.Data.l10n.meetup }}">
+        <img src="{{ $.Site.BaseURL }}img/meetup.svg" alt="{{ $.Site.Data.l10n.meetup }}" />
+    </a>
+</li>
+{{- end }}

@@ -21,12 +21,12 @@ theme ="hyde"
   # To add a header background to the main site, save your image under static/img/.
 	# If now image path is provided, a orange background will be shown instead.
 	headerImage = ""
-	copyright = "© 2016. All rights reserved."
+	copyright = ""
 
 	[params.social]
 		# Insert your accout name and the icon will be shown in the right menu
 		rss = true
-		homepage = true
+		homepage = false
 		email = ""
 		behance = ""
 		bitbucket  =""
@@ -46,3 +46,4 @@ theme ="hyde"
 		twitter = ""
 		wordpress = ""
 		youtube = ""
+		meetup = "Learn-To-Code-Grand-Rapids"
