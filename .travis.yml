@@ -26,4 +26,4 @@ script:
 
 after_success:
     - echo "ltcgr.com" > ./public/CNAME
-    - ./scripts/deploy.sh
+    - bash ./scripts/deploy.sh
