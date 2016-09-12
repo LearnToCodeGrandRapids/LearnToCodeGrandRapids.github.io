@@ -38,36 +38,36 @@ Conga provides an aggregated calendar for tech events happening in the area. Thi
 
 ## Meetups
 
-### Grand Rapids Salesforce Developer Group
+### [Big Data and Hadoop Users Group of West Michigan](http://www.meetup.com/Big-Data-and-Hadoop-Users-Group-of-West-Michigan/)
+
+### [DevOps West Michigan](http://www.meetup.com/DevOps-West-Michigan/)
+
+### [Embedded GR](http://www.meetup.com/embedded-gr/)
 
 ### GameDevGR
 
-### West Michigan Content Strategy Meetup
-
-### Grand Rapids Functional Programming
-
-### Grupal - Grand Rapids Drupal Users
-
-### Ladies that UX Grand Rapids
-
-### Big Data and Hadoop Users Group of West Michigan
-
-### DevOps West Michigan
-
 ### Girl Develop It Grand Rapids
-
-### GRPUG - Grand Rapids Python Users Group
-
-### West Michigan R Users Group
 
 ### GR Testers
 
+### Grand Rapids Salesforce Developer Group
+
+### Grand Rapids Functional Programming
+
 ### Grand Rapids Java Users Group
 
+### GRPUG - Grand Rapids Python Users Group
+
+### Grupal - Grand Rapids Drupal Users
+
 ### GRWebDev - Grand Rapids Web Development Group
+
+### Ladies that UX Grand Rapids
 
 ### Software GR and GLSEC
 
 ### West Michigan Cloud Computing
 
-### Embedded GR
+### West Michigan Content Strategy Meetup
+
+### West Michigan R Users Group
