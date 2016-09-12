@@ -64,6 +64,8 @@ Conga provides an aggregated calendar for tech events happening in the area. Thi
 
 ### Ladies that UX Grand Rapids
 
+### [Learn to Code Grand Rapids](https://www.meetup.com/Learn-To-Code-Grand-Rapids/)
+
 ### Software GR and GLSEC
 
 ### West Michigan Cloud Computing
