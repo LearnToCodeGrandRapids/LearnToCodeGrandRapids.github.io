@@ -84,6 +84,10 @@ Conga provides an aggregated calendar for tech events happening in the area. Thi
 
 > Join other local Java developers to learn more about Java, the JVM, and related technologies and languages. We encourage you to share what you know by volunteering to present a topic, too!
 
+### [GR Powershell User Group](https://grposh.github.io/)
+
+> We are a local group from Grand Rapids, Michigan, and surrounding areas. We meet monthly to discuss and expand our knowledge of Windows PowerShell.
+
 ### [GR Python Users Group](http://www.meetup.com/grpython/)
 
 > Whether you're a certified Pythonista or just curious about getting started with the Python programming language, join us on the third Monday of each month at The Factory in Grand Rapids, Michigan for our regular meetings. We usually have a presentation or group discussion, and all attendees are welcome to ask questions, suggest topics, or present.
