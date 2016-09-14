@@ -64,39 +64,41 @@ Conga provides an aggregated calendar for tech events happening in the area. Thi
 
 > We decided it was time to provide a place where all questions are OK and everyone can learn in a supportive environment.
 
-### [GR-ISSA](http://www.gr-issa.org/)
+### [GR CocoaHeads](https://www.meetup.com/GR-Cocoa-Heads/)
+
+> CocoaHeads is a group devoted to discussion of Apple Computer's Cocoa and CocoaTouch Frameworks for programming on MacOS X and iOS. During monthly meetings, members present on their projects and offer tutorials on various programming topics. 
+
+### [GR Drupal Users](http://www.meetup.com/grupal/)
+
+> Drupal users, site builders, and developers from the Grand Rapids, MI area get together to discuss a wide range of topics related to the content management system.
+
+### [GR Functional Programming](http://www.meetup.com/Grand-Rapids-Functional-Programming-Group/)
+
+> This is a group for anyone interested in functional programming, whether it's pure functional languages like Haskell, impure functional languages like Clojure, or languages like Python and Ruby which have the capabilities. All levels of experience and interest are welcome, and hopefully we can foster passion for functional programming in Grand Rapids.
+
+### [GR ISSA](http://www.gr-issa.org/)
 
 > GR-ISSA is a local chapter of the international Information Systems Security Association (or ISSA) based in Grand Rapids, Michigan. GR-ISSA provides local security professionals and practitioners a variety of information security resources ranging from presentations and knowledge sharing to social networking opportunities. This site is dedicated to the Grand Rapids, Michigan chapter of ISSA. GR-ISSA was founded in 2003. For information about the parent international ISSA organization, you are encouraged to visit www.issa.org.
+
+### [GR Java Users Group](http://www.meetup.com/gr-jug/)
+
+> Join other local Java developers to learn more about Java, the JVM, and related technologies and languages. We encourage you to share what you know by volunteering to present a topic, too!
+
+### [GR Python Users Group](http://www.meetup.com/grpython/)
+
+> Whether you're a certified Pythonista or just curious about getting started with the Python programming language, join us on the third Monday of each month at The Factory in Grand Rapids, Michigan for our regular meetings. We usually have a presentation or group discussion, and all attendees are welcome to ask questions, suggest topics, or present.
+
+### [GR Salesforce Developer Group](http://www.meetup.com/Grand-Rapids-Salesforce-Developer-Group/)
+
+> Connect with local developers building on the AppCloud! Learn from others and share your knowledge with the group!
 
 ### [GR Testers](http://www.meetup.com/GR-Testers/)
 
 > We're a bunch of software testers. We like to get together over a meal and talk about testing and general geekery. We meet sometime in the 2nd or 3rd week of the month. 
 
-### [Grand Rapids Salesforce Developer Group](http://www.meetup.com/Grand-Rapids-Salesforce-Developer-Group/)
-
-> Connect with local developers building on the AppCloud! Learn from others and share your knowledge with the group!
-
-### [Grand Rapids Functional Programming](http://www.meetup.com/Grand-Rapids-Functional-Programming-Group/)
-
-> This is a group for anyone interested in functional programming, whether it's pure functional languages like Haskell, impure functional languages like Clojure, or languages like Python and Ruby which have the capabilities. All levels of experience and interest are welcome, and hopefully we can foster passion for functional programming in Grand Rapids.
-
-### [Grand Rapids Java Users Group](http://www.meetup.com/gr-jug/)
-
-> Join other local Java developers to learn more about Java, the JVM, and related technologies and languages. We encourage you to share what you know by volunteering to present a topic, too!
-
-### [GRPUG - Grand Rapids Python Users Group](http://www.meetup.com/grpython/)
-
-> Whether you're a certified Pythonista or just curious about getting started with the Python programming language, join us on the third Monday of each month at The Factory in Grand Rapids, Michigan for our regular meetings. We usually have a presentation or group discussion, and all attendees are welcome to ask questions, suggest topics, or present.
-
-### [Grupal - Grand Rapids Drupal Users](http://www.meetup.com/grupal/)
-
-> Drupal users, site builders, and developers from the Grand Rapids, MI area get together to discuss a wide range of topics related to the content management system.
-
-### [GRWebDev - Grand Rapids Web Development Group](http://www.meetup.com/grwebdev/)
+### [GR Web Development](http://www.meetup.com/grwebdev/)
 
 > We are a group of web developers in the Grand Rapids, MI area. We discuss all parts of developing for the web, from HTML, CSS, and Javascript to design, user experience, usability, accessibility, and tools.
-
-> Whether you write code, write content, design, or manage, when you work on the web there is a lot of common ground.  Join us to learn from each other about best web practices, cross-browser compatibility, Javascript frameworks, style hacks, HTML5, and other web-related topics.
 
 ### [Internet of Things, West Michigan](http://www.meetup.com/Internet-of-Things-West-Michigan-IoTWM/)
 
