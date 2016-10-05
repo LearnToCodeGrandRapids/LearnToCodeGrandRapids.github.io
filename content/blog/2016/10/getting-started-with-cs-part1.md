@@ -189,33 +189,66 @@ var y = x + 3;
 
 In the line, `Console.WriteLine(y);` we are telling the run time, go out and retrieve the value stored in the variable y so that it can be displayed in the console.
 
-Moving on, let's comment out this section of code using the block comment operators, `/*` and `*/`. These operators allow us to comment out multiple lines at once as indicated below:
+We can also store text in memory.
 
 ```cs
-using System;
-
-namespace HelloWorld
-{
-	class MainClass
-	{
-		public static void Main(string[] args)
-		{
-			/*
-			var x = 7;
-			var y = x + 3;
-			Console.WriteLine(y);
-			*/
-
-			Console.ReadLine();
-		}
-	}
-}
+var firstName = "Jeffrey";
 ```
 
-By commenting out the code, we are telling the compiler to ignore the code when it builds the program.
+In the example above, we have created the variable `firstName` and assigned it the text value `Jeffrey`. The type of this variable is called a string. A string is special kind of variable that allows you to store text in memory. Notice how we named the variable, firstName. The f is lowecase, but the n is uppercase. This method of naming is called camel case, and it is a standard convention for variable naming in C# applications.
 
+C# is case sensative. It is possible to use the variables `firstName` and `firstname` in the same program, and have them hold different values so you want to be very careful about what you are typing.
 
+## Converting Data Types
 
+Once a variable has been established its type is fixed. You may have a situation where you want to convert the data held within a variable from one type to another. Let's take the example of an address.
+
+```cs
+var city = "Grand Rapids";
+var state = "MI";
+var zip = 49544;
+```
+
+In this example we have three variables, the first two are strings, and the last is an integer. If we wanted to format this information as an address the data within the zip field would need to be converted to a string.
+
+```cs
+var address = $"{city}, {state} {zip}";
+```
+
+This statement would result in a string variable with the value `Grand Rapids, MI 49544`. The method used to build the new string is called string interpolation. We will discuss that more in detail later. For now the important thing to recognize is that in this scenario the integer value stored in zip is *implicitly* converted to a string.
+
+What is happening in implicit conversion? Implicit conversion to a string is effectively making this call `zip.toString()`. Most datatypes in C# are actually objects which defind a method called `toString` that defines how the type should be represented as a string. There are other built in methods can be used to perform implicit conversions between some data types. 
+
+You usually want to use *explicit* type conversions rather than implicit, as implicit conversions may not work as expected resulting in subtle bugs which are difficult to find. Explicit conversions require you to define in code how the conversion would take place. 
+
+```cs
+int loadedState = state + zip;
+```
+
+If you put in this line of code, your program is not going to build. Since state is a string and there is not reliable way for the compiler to convert the string to an int. In a string contains a number, such as `"4"` it might make sense to convert it. This can be done in the following way:
+
+```cs
+int loadedState = int.Parse(state) + zip;
+```
+
+In this case we are telling the program that the variable state is a string that contains an integer, and that we would like to parse that integer out of the string. Now your program will compile, but it will not work.
+
+When the program attempts to convert MI to an integer it fails, because MI is not an integer. Let's step back and try another method:
+
+```cs
+var x = 7;
+var y ="5";
+
+var secondTry = x + int.Parse(y);
+
+Console.WriteLine(secondTry);
+```
+
+If we run this code, we should see the value `12` displayed in the console.
+
+## Next Time...
+
+In the next part we will continue covering the elements of programming in C#.
 
 ## References
 
@@ -226,3 +259,4 @@ This part covers the material from the following segments:
 * [3 - Your First C# Program](https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/03)
 * [4 - Dissecting the First C# Program You Created](https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/04)
 * [5 - Quick Overview of the Visual C# Express Edition IDE](https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/05)
+* [6 - Declaring Variables and Assigning Values Duration](https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/06)
