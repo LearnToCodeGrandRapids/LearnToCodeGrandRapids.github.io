@@ -160,6 +160,63 @@ In the example below note that there is a read squiggle under `WriteLne` this is
 
 ![Console hello](/blog/2016/10/red-squiggle.png)
 
+## Variables
+
+Let's consider an algebraic function, 5 + 7 = x. You have probably seen an equation like this in a math class, typically with the directive: solve for x. This scenario is pretty simple, as x is 12. Now, let's extend this thinking into code: 
+
+```cs
+var x = 7;
+var y = x + 3;
+Console.WriteLine(y);
+``` 
+
+What do you think will be the output written to the console? Let's find out. 
+
+Create another program using the direction above, and call it `Variables`. Once the project has been created, and finishes loading replace the line `Console.WriteLine("Hello World!");` with the code listed above, and then run it.
+
+Was `10` written to the console? If so, everything worked as expected.
+
+Let's break this down. In this code sample, we have `x` and `y`, which are called variables. A variable is just a way to hold a value during program execution. In this case, our variables are numbers, integers to be specific. Variables can be pretty much any type available to you, numbers, strings, dates, etc. You can think of a variable as a bucket in the computers memory where you can put data into and retrieve data from.
+
+The `var` keyword tells the compiler that we want to initialize a variable, and we want the compiler to figure out what type it should be based on our usage. In our code sample we are only using whole numers that are small in scope. So, the compiler will determine that it should use integers (`int`) for the values. An integer is a mathematical concept for a number that has not fractional or decimal value. An integer can be pretty large, a little over two billion either positive or negative. If we wanted to store larger values we would have to use a different data type that reserves enough memory for larger values. If we wanted to be explicit, we could have used the keyword for the specific type we wanted to use, i.e., `int x = 7;`. 
+
+In our example, we have two variable assignments. The equals sign is the assignment operator. This is where we are telling the run time to store values in memory for retrieval later on. 
+
+```cs
+var x = 7;
+var y = x + 3;
+```
+
+In the line, `Console.WriteLine(y);` we are telling the run time, go out and retrieve the value stored in the variable y so that it can be displayed in the console.
+
+Moving on, let's comment out this section of code using the block comment operators, `/*` and `*/`. These operators allow us to comment out multiple lines at once as indicated below:
+
+```cs
+using System;
+
+namespace HelloWorld
+{
+	class MainClass
+	{
+		public static void Main(string[] args)
+		{
+			/*
+			var x = 7;
+			var y = x + 3;
+			Console.WriteLine(y);
+			*/
+
+			Console.ReadLine();
+		}
+	}
+}
+```
+
+By commenting out the code, we are telling the compiler to ignore the code when it builds the program.
+
+
+
+
 ## References
 
 This workshop covers material from the [C# Fundamentals for Absolute Beginners](https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/) series. The videos segements in the course are very thorough, and we recommend you view them in addition to the materials preseneted here as this post contains a subset of the information in the videos. Note that the videos use Visual Studio Express rather than Xamarin Studio, so while the IDE features are similiar they are different. The code backing the solutions is identical.
