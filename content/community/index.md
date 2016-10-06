@@ -80,6 +80,10 @@ Conga provides an aggregated calendar for tech events happening in the area. Thi
 
 > GR-ISSA is a local chapter of the international Information Systems Security Association (or ISSA) based in Grand Rapids, Michigan. GR-ISSA provides local security professionals and practitioners a variety of information security resources ranging from presentations and knowledge sharing to social networking opportunities. This site is dedicated to the Grand Rapids, Michigan chapter of ISSA. GR-ISSA was founded in 2003. For information about the parent international ISSA organization, you are encouraged to visit www.issa.org.
 
+### [GR IT Professionals [SpiceCorps]](https://www.meetup.com/Grand-Rapids-IT-Professionals-SpiceCorp/)
+
+> Anyone in IT or has passion for computers and technology are welcome! We will meetup monthly to discuss the latest and greatest in Information Technology over beers, vent about our latest projects and needy users, and do prizes where we give away SWAG from SpiceWorks and sponsors!
+
 ### [GR Java Users Group](http://www.meetup.com/gr-jug/)
 
 > Join other local Java developers to learn more about Java, the JVM, and related technologies and languages. We encourage you to share what you know by volunteering to present a topic, too!
