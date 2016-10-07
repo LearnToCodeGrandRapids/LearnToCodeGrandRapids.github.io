@@ -1,6 +1,6 @@
 +++
 date = "2016-10-01T00:00:00-04:00"
-draft = true
+draft = false
 title = "Getting Started with C# - Part 1"
 tags = ["c#"]
 categories = [ "Languages" ]
@@ -8,7 +8,9 @@ featureimage = ""
 menu = ""
 +++
 
-Here are the notes from our October 2016 workshop.
+Below are my notes for the October 2016 meetup where we go over the basics of C#, and do an overview of Xamarin Studio. We highly recommend that you watch the video series associated with this material since it is far more complete.
+
+<!--more-->
 
 ## Setting up your Development Environment
 

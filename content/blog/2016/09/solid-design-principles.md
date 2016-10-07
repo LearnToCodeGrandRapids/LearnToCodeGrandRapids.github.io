@@ -12,6 +12,8 @@ For the Septemeber 2016 meeting we were delighted to host Eric Downing (of Magic
 
 http://slides.com/ericdowning/solid-design-principles 
 
+<!--more-->
+
 ### Referenced Resources
 
 * http://www.oodesign.com/dependency-inversion-principle.html
