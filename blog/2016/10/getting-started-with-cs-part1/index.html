@@ -1,0 +1,387 @@
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.18-DEV" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  
+  <title>Getting Started with C# - Part 1 &middot; Learn to Code Grand Rapids</title>
+  
+
+  
+  <link rel="stylesheet" href="http://ltcgr.com/css/poole.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/syntax.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/hyde.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/site.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Learn to Code Grand Rapids" />
+
+  <!-- Font Awesome -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+	<body class="theme-ltcgr ">
+		<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://ltcgr.com/">
+        <img class="logo" src="http://ltcgr.com//img/logo.png" alt="Learn to Code Grand Rapids"/>
+      </a>
+      
+      <p class="lead">
+       Developing, together. 
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      
+        <li><a href="/about/"> About </a></li>
+      
+        <li><a href="/community/"> Community </a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav-icons">
+      
+
+<li>
+    <a href="http://ltcgr.com/index.xml" title="Subcribe">
+        <i class="fa fa-fw fa-rss"></i>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://github.com/learntocodegrandrapids" title="GitHub">
+        <i class="fa fa-fw fa-github"></i>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://www.meetup.com/Learn-To-Code-Grand-Rapids/" title="">
+        <img src="http://ltcgr.com/img/meetup.svg" alt="" />
+    </a>
+</li>
+
+    </ul>
+
+    <p>&copy; 2016. All rights reserved. </p>
+  </div>
+</div>
+
+
+		<div class="content container">
+			<div class="post">
+			 	<h1>Getting Started with C# - Part 1</h1>
+			  <span class="post-date">Sat, Oct 1, 2016</span>
+			      <p>Below are my notes for the October 2016 meetup where we go over the basics of C#, and do an overview of Xamarin Studio. We highly recommend that you watch the video series associated with this material since it is far more complete.</p>
+
+<p></p>
+
+<h2 id="setting-up-your-development-environment">Setting up your Development Environment</h2>
+
+<p>For this workshop, we will be using Xamarin Studio (or MonoDevelop if you are using linux). The first thing we will do is get the environment setup.</p>
+
+<ul>
+<li><p>For macOS you can use brew: <code>brew cask install xamarin-studio</code> (<a href="http://macappstore.org/xamarin-studio/">click here</a> for detailed directions).</p></li>
+
+<li><p>For Windows, use can <a href="https://www.xamarin.com/download">download the universal installer</a>.</p>
+
+<ul>
+<li>NOTE: If you are using the offline installers for Windows rather than the installer listed above, you need to install GTK# for .NET, and MSBuild Tools before installing Xamarin Studio.</li>
+</ul></li>
+
+<li><p>For linux, your distribution probably already has a package for monodevelop, but if it doesn&rsquo;t you can <a href="http://www.monodevelop.com/download/">download the source here</a></p></li>
+</ul>
+
+<h2 id="your-first-c-application">Your First C# Application</h2>
+
+<p>Open Xamarin Studio</p>
+
+<p>Click on File -&gt; New Solution</p>
+
+<p><img src="/blog/2016/10/new-solution.png" alt="New solution screenshot" /></p>
+
+<p>In the dialog, select .NET, and then &ldquo;Console Project.&rdquo; Click, &ldquo;Next.&rdquo;</p>
+
+<p><img src="/blog/2016/10/console-project.png" alt="New Console Project" /></p>
+
+<p>In the Project Name box, enter HelloWorld, and then click, &ldquo;Create.&rdquo;</p>
+
+<p><img src="/blog/2016/10/hello-world.png" alt="New Console Project" /></p>
+
+<p>After a moment you should be taken to the Program.cs file within your new project. It should look something like this:</p>
+
+<pre><code class="language-cs">using System;
+
+namespace HelloWorld
+{
+	class MainClass
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine(&quot;Hello World!&quot;);
+		}
+	}
+}
+</code></pre>
+
+<p>At this point you could run the application. It would print &ldquo;Hello World!&rdquo; to a console window and then immeidately exit. It is difficult to see if your programming is generating the correct output when it just blinks on the screen. We are going to add a line to the program to make it wait for keyboard input before closing so that we can visually inspect the output.</p>
+
+<p>After the <code>Console.WriteLine(&quot;Hello World!&quot;);</code> line, add a new line, and then add the following: <code>Console.ReadLine();</code> this will cause the program to pause after printing Hello World! until you press return.</p>
+
+<pre><code class="language-cs">		public static void Main(string[] args)
+		{
+			Console.WriteLine(&quot;Hello World!&quot;);
+			Console.ReadLine();
+		}
+</code></pre>
+
+<p>Now we can run the application. Be sure you have saved your change, and then click on the play button to execute the program.</p>
+
+<p><img src="/blog/2016/10/play.png" alt="Play button" /></p>
+
+<p>You should now see a console window with the words &ldquo;Hello World!&rdquo; printed on screen.</p>
+
+<p><img src="/blog/2016/10/console-hello.png" alt="Console hello" /></p>
+
+<h2 id="breaking-down-our-first-program">Breaking Down Our First Program</h2>
+
+<p>The .NET framework has two fundamental components that make your life as a developer much easier.</p>
+
+<ul>
+<li><p>Class Library - The set of prewritten libraries that take care of routine development activities so that you do not have to. This includes such routines as handling inputs and outputs for your program.</p></li>
+
+<li><p>Runtime - The protective bubble in which your application lives. The runtime handles low level concerns so that you can focus on your application rather than being concerned by how the computer is managing memory, etc.</p></li>
+</ul>
+
+<p>In the program that we just wrote, we have already taken advantage of the class library. The command <code>Console.WriteLine(&quot;Hello World!&quot;);</code> handles writing the text, &ldquo;Hello World!&rdquo; to the console. All we have to be concerned about is what we want printed on the screen. The Console library takes care of everything necessary to take that information and display it in the console window for us.</p>
+
+<h3 id="code-blocks">Code Blocks</h3>
+
+<p>You may have noticed that the application has several sets of curly braces. Each of these sets of curly braces represents a block of code. Each code block represents a specific scope for the code that exists within it. We will talk about the implications of this later on, for now lets focus on the inner most set of curly braces.</p>
+
+<p>This code block is named Main. The name is what is used to invoke a particular code block. This code block is a method, since it is defined within the scope of a class. In this case, the class is Program. This of the Main method in the Program class is that it is executed when the program is runs.</p>
+
+<p>Let&rsquo;s take a look at the class Program. You can think of a class as an organizational structure. It is a way to group together common data, and functionality.</p>
+
+<p>The outermost set of curly braces is the namespace HelloWorld. Namespaces are another way of organizing your code. Namespaces represent a collection of related classes.</p>
+
+<h3 id="inside-main">Inside Main</h3>
+
+<p>Revisiting the command <code>Console.WriteLine(&quot;Hello World!&quot;);</code> we can now think about this in the context established earlier. We see the method WriteLine on the class Console. The next line references another method named ReadLine, also within the Console class. Since both of these methods deal with the console it makes sense for them to be in a common class named, Console, right?</p>
+
+<p>Both of these methods were written by someone at Microsoft as part of the class library. We benefit from their work by simply invoking methods they wrote using the syntax above.</p>
+
+<p>In <code>Console.WriteLine(&quot;Hello World!&quot;);</code> notice that there is a dot between the class Console and the method WriteLine. The dot is called a member accessor. This tells the program that you want to access something on the class, in this case, the method WriteLine.</p>
+
+<p>The parentheses indicate the input we would like the method to use during execution. In this case, we are passing in the string literal, &ldquo;Hello World!&rdquo; This means we are explicitly defining the value to be displayed on screen by the method. Later on we will talk about variables and how they can be used as input as well. Notice that the ReadLine method has parentheses, but there is nothing between them. In this case, we are invoking the method, but are not passing in any values.</p>
+
+<p>The semicolon at the end of the line indicates the end of a statement. A statement is a single action to be taken during program execution. We have a line between the two method calls for readability. However, since both statements end in a semicolon the line break is not necessary for the program to function. In fact, the entire program could be written on a single line. I wouldn&rsquo;t recommend doing that both for your own sanity and for the sanity of anyone having to maintain your code.</p>
+
+<p>Alternatively, you can take a single statement and break it up between multiple lines, again for readability. It does not make sense in this case since the statements are so short, but we will be using this functionality in the future.</p>
+
+<h2 id="xamarin-studio">Xamarin Studio</h2>
+
+<h3 id="syntax-highlighting">Syntax Highlighting</h3>
+
+<p>You will notice that some of the code within the IDE is colored differently. The IDE is assisting in making the code easier to read by color coding different elements. By default within Xamarin Studio, classes are highlighted in blue, reserved words are highlighted in teal, and strings are highlighted in orange.</p>
+
+<h3 id="solution-structure">Solution Structure</h3>
+
+<p>In the pane to the far left, you will see the solution for our program. At the highest level is the solution, and below that is the project. Our program is a single project, but a solution can be made up of multiple projects. It is not important now, but as you develop increasingly complicated applications, organizing your code into different projects will be invaluable. Within the project are the various pieces that make up the project; so far we are only concerned with the Program.cs file.</p>
+
+<h3 id="debug-vs-release">Debug vs Release</h3>
+
+<p>By default, when you build applications in Xamarin Studio the result is intended to be used for debugging. As a result, it includes additional metadata and certain optimizations are disabled. This is great when you are developing an application, but not when you are ready to distribute it to other people. When you reach a point where you are ready to create a build for distribution, you will want to change your build target to Release, as seen below:</p>
+
+<p><img src="/blog/2016/10/debug.png" alt="Console hello" /></p>
+
+<h3 id="where-are-the-files">Where are the Files?</h3>
+
+<p>When you are ready to grab your executable, you can access the folder that contains your project by right clicking on it in the solution explorer. On a Mac, you select &ldquo;Reveal in Finder.&rdquo; On a PC, select &ldquo;Open in Explorer?&rdquo;</p>
+
+<p><img src="/blog/2016/10/reveal-in-finder.png" alt="Console hello" /></p>
+
+<p>Once your file browser has opened, navigate to the bin directory. Inside this directory you should see a Debug folder, and possibly a Release folder. Each of these folders contains the build for the specified target.</p>
+
+<p><img src="/blog/2016/10/release.png" alt="Console hello" /></p>
+
+<h3 id="debugging">Debugging</h3>
+
+<p>While you are developing your application, you may find it valuable to be able to step through the execution of your program. This will allow you to monitor the application as execution progresses.</p>
+
+<p>In order to trigger the debugger, we must set a breakpoint within the application. At this breakpoint the program execution will pause, and allow us to control further execution of the program, inspect the state of the application, and even change the state of the application as it executes.</p>
+
+<p>To create a breakpoint, click in the gray area to the left of the line numbers in the editor. If you did this correctly, there should be a red dot where you clicked.</p>
+
+<p><img src="/blog/2016/10/set-breakpoint.png" alt="Console hello" /></p>
+
+<p>Now, to start debugging click play like we did earlier to start the program. At this point we should see the the line we set the breakpoint highlighted in yellow. This indicates that the program is currently paused, and ready to execute the highlighted line.</p>
+
+<p><img src="/blog/2016/10/debugging.png" alt="Console hello" /></p>
+
+<h3 id="intellisense">Intellisense</h3>
+
+<p>You may have noticed earlier that a drop-down list appears when you were typing the command <code>Console.ReadLine();</code> after you typed the member accessor. By typing the member accessor, the IDE kicked in intellisense which anticipated your next action, and attempts to help by presenting you with the set of members on the Console class. This can be very helpful as you work on applications, because you will not have to remember everything about the structure of the application, or the classes that you are using.</p>
+
+<p><img src="/blog/2016/10/intellisense.png" alt="Console hello" /></p>
+
+<h3 id="red-squiggles">Red Squiggles</h3>
+
+<p>In the example below, note that there is a red squiggle under <code>WriteLne</code> this is the IDE catching an error in the code. Here we have a typo, we missed the &ldquo;i&rdquo; in Line in our method. As a result, it highlighted the mistake by indicating it with the red squiggle. You can usually highlight over a squiggle to get a tool tip that indicates why it is there. The IDE will not find all errors, but it is pretty good at picking up simple errors like this one.</p>
+
+<p><img src="/blog/2016/10/red-squiggle.png" alt="Console hello" /></p>
+
+<h2 id="variables">Variables</h2>
+
+<p>Let&rsquo;s consider an algebraic function, 5 + 7 = x. You have probably seen an equation like this in a math class, typically with the directive: solve for x. This scenario is pretty simple, as x is 12. Now, let&rsquo;s extend this thinking into code:</p>
+
+<pre><code class="language-cs">var x = 7;
+var y = x + 3;
+Console.WriteLine(y);
+Console.ReadLine();
+</code></pre>
+
+<p>What do you think will be the output written to the console? Let&rsquo;s find out.</p>
+
+<p>Create another program using the direction above, and call it <code>Variables</code>. Once the project has been created, and finishes loading replace the line <code>Console.WriteLine(&quot;Hello World!&quot;);</code> with the code listed above, and then run it.</p>
+
+<p>Was <code>10</code> written to the console? If so, everything worked as expected.</p>
+
+<p>Let&rsquo;s break this down. In this code sample, we have <code>x</code> and <code>y</code>, which are called variables. A variable is just a way to hold a value during program execution. In this case, our variables are numbers, integers to be specific. Variables can be pretty much any type available to you; numbers, strings, dates, etc. You can think of a variable as a bucket in the computer&rsquo;s memory where you can put data into and retrieve data from.</p>
+
+<p>The <code>var</code> keyword tells the compiler that we want to initialize a variable, and we want the compiler to figure out what type it should be based on our usage. In our code sample, we are only using whole numbers that are small in scope. So, the compiler will determine that it should use integers (<code>int</code>) for the values. An integer is a mathematical concept for a number that has not fractional or decimal value. An integer can be pretty large, a little over two billion either positive or negative. If we wanted to store larger values we would have to use a different data type that reserves enough memory for larger values. If we wanted to be explicit, we could have used the keyword for the specific type we wanted to use, i.e., <code>int x = 7;</code>.</p>
+
+<p>In our example, we have two variable assignments. The equals sign is the assignment operator. This is where we are telling the run time to store values in memory for retrieval later on.</p>
+
+<pre><code class="language-cs">var x = 7;
+var y = x + 3;
+</code></pre>
+
+<p>In the line, <code>Console.WriteLine(y);</code> we are telling the run time to go out and retrieve the value stored in the variable y so that it can be displayed in the console.</p>
+
+<p>We can also store text in memory.</p>
+
+<pre><code class="language-cs">var firstName = &quot;Jeffrey&quot;;
+</code></pre>
+
+<p>In the example above, we have created the variable <code>firstName</code> and assigned it the text value <code>Jeffrey</code>. The type of this variable is called a string. A string is special kind of variable that allows you to store text in memory. Notice how we named the variable, firstName. The f is lowecase, but the n is uppercase. This method of naming is called camel case; it is a standard convention for variable naming in C# applications.</p>
+
+<p>C# is case sensitive. It is possible to use the variables <code>firstName</code> and <code>firstname</code> in the same program, and have them hold different values, so you want to be very careful about what you are typing.</p>
+
+<h2 id="converting-data-types">Converting Data Types</h2>
+
+<p>Once a variable has been established, its type is fixed. You may have a situation where you want to convert the data held within a variable from one type to another. Let&rsquo;s take the example of an address.</p>
+
+<pre><code class="language-cs">var city = &quot;Grand Rapids&quot;;
+var state = &quot;MI&quot;;
+var zip = 49544;
+</code></pre>
+
+<p>In this example, we have three variables. The first two are strings, and the last is an integer. If we wanted to format this information as an address, the data within the zip field would need to be converted to a string.</p>
+
+<pre><code class="language-cs">var address = $&quot;{city}, {state} {zip}&quot;;
+</code></pre>
+
+<p>This statement would result in a string variable with the value <code>Grand Rapids, MI 49544</code>. The method used to build the new string is called string interpolation. We will discuss that more in detail later. For now the important thing to recognize is that in this scenario the integer value stored in zip is <em>implicitly</em> converted to a string.</p>
+
+<p>What is happening in implicit conversion? Implicit conversion to a string is effectively making this call <code>zip.toString()</code>. Most datatypes in C# are actually objects which define a method called <code>toString</code> that defines how the type should be represented as a string. There are other built-in methods that can be used to perform implicit conversions between some data types.</p>
+
+<p>You usually want to use <em>explicit</em> type conversions rather than implicit, as implicit conversions may not work as expected resulting in subtle bugs which are difficult to find. Explicit conversions require you to define in code how the conversion would take place.</p>
+
+<pre><code class="language-cs">int loadedState = state + zip;
+</code></pre>
+
+<p>If you put in this line of code, your program is not going to build. Since state is a string and there is not reliable way for the compiler to convert the string to an int. In a string contains a number, such as <code>&quot;4&quot;</code> it might make sense to convert it. This can be done in the following way:</p>
+
+<pre><code class="language-cs">int loadedState = int.Parse(state) + zip;
+</code></pre>
+
+<p>In this case, we are telling the program that the variable state is a string that contains an integer, and that we would like to parse that integer out of the string. Now your program will compile, but it will not work.</p>
+
+<p>When the program attempts to convert MI to an integer it fails, because MI is not an integer. Let&rsquo;s step back and try another method:</p>
+
+<pre><code class="language-cs">var x = 7;
+var y = &quot;5&quot;;
+
+var secondTry = x + int.Parse(y);
+
+Console.WriteLine(secondTry);
+</code></pre>
+
+<p>If we run this code, we should see the value <code>12</code> displayed in the console.</p>
+
+<h2 id="next-time">Next Time&hellip;</h2>
+
+<p>In the next part, we will continue covering the elements of programming in C#.</p>
+
+<h2 id="references">References</h2>
+
+<p>This workshop covers material from the <a href="https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/">C# Fundamentals for Absolute Beginners</a> series. The video segments in the course are very thorough, and we recommend you view them in addition to the materials presented here as this post contains a subset of the information in the videos. Note that the videos use Visual Studio Express rather than Xamarin Studio, so while the IDE features are similar they are different. The code backing the solutions is identical.</p>
+
+<p>This part covers the material from the following segments:</p>
+
+<ul>
+<li><a href="https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/03">3 - Your First C# Program</a></li>
+<li><a href="https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/04">4 - Dissecting the First C# Program You Created</a></li>
+<li><a href="https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/05">5 - Quick Overview of the Visual C# Express Edition IDE</a></li>
+<li><a href="https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/06">6 - Declaring Variables and Assigning Values Duration</a></li>
+</ul>
+			</div>
+
+			
+		</div>
+
+  </body>
+</html>

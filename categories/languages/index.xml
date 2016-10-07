@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog-rsses on Learn to Code Grand Rapids</title>
-    <link>http://ltcgr.com/blog/index.xml</link>
-    <description>Recent content in Blog-rsses on Learn to Code Grand Rapids</description>
+    <title>Learn to Code Grand Rapids</title>
+    <link>http://ltcgr.com/categories/languages/index.xml</link>
+    <description>Recent content on Learn to Code Grand Rapids</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Oct 2016 00:00:00 -0400</lastBuildDate>
-    <atom:link href="http://ltcgr.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ltcgr.com/categories/languages/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>October 2016 Meetup Notes</title>
@@ -313,31 +312,6 @@ Console.WriteLine(secondTry);
 &lt;li&gt;&lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/04&#34;&gt;4 - Dissecting the First C# Program You Created&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/05&#34;&gt;5 - Quick Overview of the Visual C# Express Edition IDE&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/06&#34;&gt;6 - Declaring Variables and Assigning Values Duration&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>SOLID Design Principles</title>
-      <link>http://ltcgr.com/blog/2016/09/solid-design-principles/</link>
-      <pubDate>Thu, 15 Sep 2016 21:34:59 -0400</pubDate>
-      
-      <guid>http://ltcgr.com/blog/2016/09/solid-design-principles/</guid>
-      <description>&lt;p&gt;For the Septemeber 2016 meeting we were delighted to host Eric Downing (of Magic-Wrighter Inc) who presented on SOLID design principles. His slide deck can be accessed here:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://slides.com/ericdowning/solid-design-principles&#34;&gt;http://slides.com/ericdowning/solid-design-principles&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;referenced-resources&#34;&gt;Referenced Resources&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.oodesign.com/dependency-inversion-principle.html&#34;&gt;http://www.oodesign.com/dependency-inversion-principle.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074&#34;&gt;http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design&#34;&gt;https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.vikingcodeschool.com/software-engineering-basics/solid-design-principles&#34;&gt;https://www.vikingcodeschool.com/software-engineering-basics/solid-design-principles&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
