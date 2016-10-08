@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resources-rsses on Learn to Code Grand Rapids</title>
+    <link>http://ltcgr.com/resources/index.xml</link>
+    <description>Recent content in Resources-rsses on Learn to Code Grand Rapids</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Oct 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://ltcgr.com/resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Resources</title>
+      <link>http://ltcgr.com/resources/</link>
+      <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://ltcgr.com/resources/</guid>
+      <description>
+
+&lt;h2 id=&#34;beginner&#34;&gt;Beginner&lt;/h2&gt;
+
+&lt;p&gt;These resources for people who are justing starting their learning to code journey.&lt;/p&gt;
+
+&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/&#34;&gt;C# Fundamentals for Absolute Beginners&lt;/a&gt; - If you are just getting started and C# is your first language we strongly recommend you watch this video series.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;practice-problems&#34;&gt;Practice Problems&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://adriann.github.io/programming_problems.html&#34;&gt;Simple Programming Problems&lt;/a&gt; - These programming problems are designed for people who are just getting started, and get progressively more difficult at you advance.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://projecteuler.net/&#34;&gt;Project Euler&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;training-programs&#34;&gt;Training Programs&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.com/&#34;&gt;freeCodeCamp&lt;/a&gt; - Learn web development using JavaScript.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
