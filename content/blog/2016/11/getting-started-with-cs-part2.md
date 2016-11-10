@@ -1,6 +1,6 @@
 +++
 date = "2016-11-01T00:00:00-04:00"
-draft = true
+draft = false
 title = "Getting Started with C# - Part 2"
 tags = ["c#"]
 categories = [ "Languages" ]
@@ -14,7 +14,7 @@ Below are my notes for the November 2016 meetup where we go over the basics of C
 
 ## Programming Problems
 
-We begin with some basic programming problems that allow us to use the skills we learned in our last session.
+We begin with some basic programming problems that allow us to use the skills we learned in our last session. You can [download stubs for all the programming problems](https://github.com/LearnToCodeGrandRapids/getting-started-with-cs-part2) for this meetup on our github.
 
 * Write a program that asks the user for her name and greets her with her name.
 
