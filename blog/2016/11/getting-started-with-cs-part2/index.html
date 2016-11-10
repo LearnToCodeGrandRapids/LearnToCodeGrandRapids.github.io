@@ -1,0 +1,344 @@
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.18-DEV" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  
+  <title>Getting Started with C# - Part 2 &middot; Learn to Code Grand Rapids</title>
+  
+
+  
+  <link rel="stylesheet" href="http://ltcgr.com/css/poole.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/syntax.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/hyde.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/site.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Learn to Code Grand Rapids" />
+
+  <!-- Font Awesome -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+	<body class=" ">
+		<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://ltcgr.com/">
+        <img class="logo" src="http://ltcgr.com//img/logo.png" alt="Learn to Code Grand Rapids"/>
+      </a>
+      
+      <p class="lead">
+       Developing, together. 
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      
+        <li><a href="/about/"> About </a></li>
+      
+        <li><a href="/community/"> Community </a></li>
+      
+        <li><a href="/resources/"> Resources </a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav-icons">
+      
+
+<li>
+    <a href="http://ltcgr.com/index.xml" title="Subcribe">
+        <i class="fa fa-fw fa-rss"></i>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://github.com/learntocodegrandrapids" title="GitHub">
+        <i class="fa fa-fw fa-github"></i>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://www.meetup.com/Learn-To-Code-Grand-Rapids/" title="">
+        <img src="http://ltcgr.com/img/meetup.svg" alt="" />
+    </a>
+</li>
+
+    </ul>
+
+    <p>&copy; 2016. All rights reserved. </p>
+  </div>
+</div>
+
+
+		<div class="content container">
+			<div class="post">
+			 	<h1>Getting Started with C# - Part 2</h1>
+			  <span class="post-date">Tue, Nov 1, 2016</span>
+			      <p>Below are my notes for the November 2016 meetup where we go over the basics of C# and work through some sample problems. We highly recommend that you <a href="https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/">watch the video series</a> associated with collections and data structures since it is far more complete.</p>
+
+<p></p>
+
+<h2 id="programming-problems">Programming Problems</h2>
+
+<p>We begin with some basic programming problems that allow us to use the skills we learned in our last session. You can <a href="https://github.com/LearnToCodeGrandRapids/getting-started-with-cs-part2">download stubs for all the programming problems</a> for this meetup on our github.</p>
+
+<ul>
+<li><p>Write a program that asks the user for her name and greets her with her name.</p></li>
+
+<li><p>Write a program that prints the next 20 leap years.</p></li>
+
+<li><p>Write a program that asks the user for a number n and prints the sum of the numbers 1 to n</p></li>
+</ul>
+
+<h2 id="collections">Collections</h2>
+
+<p>Thus far we have been using primatives, and strings capable of storing a single value. It is frequently useful to work with a collection of values as you develop programs. One of the simpliest, and most widely used collection type is the array.</p>
+
+<h3 id="arrays">Arrays</h3>
+
+<p>Arrays in C# have the following attributes:</p>
+
+<ul>
+<li>All elements in the array must be the same type</li>
+<li>All elements in the array are stored within a contiguous block of memory</li>
+<li>Individual elements of the array and be retrieved directly</li>
+</ul>
+
+<p>In our previous meeting we discussed how variables are essentially buckets that hold values in the computer&rsquo;s memory. Each of these buckets has a specific size based on the type held within.</p>
+
+<pre><code class="language-cs">var x = 5;
+</code></pre>
+
+<p>In the diagram below, we see a section of memory in chunks of the size of an int.</p>
+
+<table style="text-align: center;">
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td style="background: #cfc">7</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="background: #cff">x</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+<p>Let&rsquo;s say we have a situation where you want to keep track of how many times a day you think about the weekend during the week. For this, we would need to create an array that can hold five values, one for each week day.</p>
+
+<pre><code class="language-cs">var weekdays = new int[5];
+</code></pre>
+
+<p>Now we have a chunk of memory that looks something like this:</p>
+
+<table style="text-align: center;">
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td style="background: #cfc">0</td>
+        <td style="background: #cfc">0</td>
+        <td style="background: #cfc">0</td>
+        <td style="background: #cfc">0</td>
+        <td style="background: #cfc">0</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="background: #cff" colspan="5">weekdays</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+<p>Elements in an array can be accessed, or assigned using an indexed defined by its position relative to the beginning of the array. Let&rsquo;s say that you start thinking about the weekend on Wednesday afternoon. We can access this value at <code>weekday[2]</code>. The index of Wednesday is 2, even though it is the third day of this week. That is because it is offset by two positions from the beginning of the array. Let&rsquo;s set the value to 1.</p>
+
+<pre><code class="language-cs">weekday[2] = 1;
+</code></pre>
+
+<p>Now our block of memory looks something like this:</p>
+
+<table style="text-align: center;">
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td style="background: #cfc">0</td>
+        <td style="background: #cfc">0</td>
+        <td style="background: #cfc">1</td>
+        <td style="background: #cfc">0</td>
+        <td style="background: #cfc">0</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+        <td style="background: #ccc">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="background: #cff" colspan="5">weekdays</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+<p>Now&rsquo;s lets say that you want to add Sunday to the list, because that is the day that you start planning your activities for the following weekend. Unfortunately, arrays are fixed in size once you create them. If you want to expand an array, you need to create a new array, and copy the values from your old array. It is a lot to keep track of, right? Well, luckily the foundation library comes with some collections that make our lives easier. In this case, the list.</p>
+
+<h3 id="lists">Lists</h3>
+
+<p>Lists allow you to work with a collection of values like an array, but you do not have to worry about any of the allocation issues. Lets create our list of weekdays.</p>
+
+<pre><code class="language-cs">var weekdays = new List&lt;int&gt;();
+</code></pre>
+
+<p>This code looks similiar to how we defined our array earlier, but we do not specific a specific number of elements contained within. This does require us to add each of the days to the list ourselves.</p>
+
+<pre><code class="language-cs">weekdays.Add(0); // monday
+weekdays.Add(0); // tuesday
+weekdays.Add(0); // wendesday
+weekdays.Add(0); // thursday
+weekdays.Add(0); // friday
+</code></pre>
+
+<p>We can still assign values in the list like we did in the array. To set Wednesday to 1 again, we simply:</p>
+
+<pre><code class="language-cs">weekday[2] = 1;
+</code></pre>
+
+<p>Now, if we decide to add in the weekdays to account for Sunday&rsquo;s planning sessions we can without having to worry about how memory is managed behind the scenes.</p>
+
+<pre><code class="language-cs">weekdays.Add(0); // saturday
+weekdays.Add(2); // sunday
+</code></pre>
+
+<p>After we have added the weekend, we can still retrieve the value we set for Wednesday.</p>
+
+<pre><code class="language-cs">Console.WriteLine(weekdays[2]);
+</code></pre>
+
+<pre><code>1
+</code></pre>
+
+<p>Let&rsquo;s take what we have learned and apply it to some more programming problems:</p>
+
+<ul>
+<li><p>Write a function that returns the largest element in a list.</p></li>
+
+<li><p>Write a function that concatenates two lists.</p></li>
+
+<li><p>Write a function that takes an integer and returns a list of its digits.</p></li>
+
+<li><p>Write a function that takes a list of strings an prints them, one per line, in a rectangular frame. For example the list <code>[&quot;Hello&quot;, &quot;World&quot;, &quot;in&quot;, &quot;a&quot;, &quot;frame&quot;]</code> gets printed as:</p></li>
+</ul>
+
+<pre><code>*********
+* Hello *
+* World *
+* in    *
+* a     *
+* frame *
+*********
+</code></pre>
+
+<h3 id="extra-credit">Extra Credit</h3>
+
+<p>Research about the collection type, <a href="https://msdn.microsoft.com/en-us/library/xfhwa508(v=vs.110).aspx">Dictionary</a> and write a program that automatically converts English text to Morse code.</p>
+
+<h2 id="references">References</h2>
+
+<p>For more on collections you can read the <a href="https://msdn.microsoft.com/en-us/library/7y3x785f(v=vs.110).aspx">Collections and Data Structures</a> section of the MSDN.</p>
+
+<p>Many of the programming problems presented here came from <a href="https://adriann.github.io/programming_problems.html">Simple Programming Problems</a>. This is a good resource for programming problems for beginners.</p>
+			</div>
+
+			
+		</div>
+
+  </body>
+</html>

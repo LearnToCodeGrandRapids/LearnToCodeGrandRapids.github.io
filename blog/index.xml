@@ -1,13 +1,230 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog-rsses on Learn to Code Grand Rapids</title>
+    <title>Blogs on Learn to Code Grand Rapids</title>
     <link>http://ltcgr.com/blog/index.xml</link>
-    <description>Recent content in Blog-rsses on Learn to Code Grand Rapids</description>
+    <description>Recent content in Blogs on Learn to Code Grand Rapids</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Oct 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Nov 2016 00:00:00 -0400</lastBuildDate>
     <atom:link href="http://ltcgr.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting Started with C# - Part 2</title>
+      <link>http://ltcgr.com/blog/2016/11/getting-started-with-cs-part2/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://ltcgr.com/blog/2016/11/getting-started-with-cs-part2/</guid>
+      <description>&lt;p&gt;Below are my notes for the November 2016 meetup where we go over the basics of C# and work through some sample problems. We highly recommend that you &lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/&#34;&gt;watch the video series&lt;/a&gt; associated with collections and data structures since it is far more complete.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;programming-problems&#34;&gt;Programming Problems&lt;/h2&gt;
+
+&lt;p&gt;We begin with some basic programming problems that allow us to use the skills we learned in our last session. You can &lt;a href=&#34;https://github.com/LearnToCodeGrandRapids/getting-started-with-cs-part2&#34;&gt;download stubs for all the programming problems&lt;/a&gt; for this meetup on our github.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Write a program that asks the user for her name and greets her with her name.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Write a program that prints the next 20 leap years.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Write a program that asks the user for a number n and prints the sum of the numbers 1 to n&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;collections&#34;&gt;Collections&lt;/h2&gt;
+
+&lt;p&gt;Thus far we have been using primatives, and strings capable of storing a single value. It is frequently useful to work with a collection of values as you develop programs. One of the simpliest, and most widely used collection type is the array.&lt;/p&gt;
+
+&lt;h3 id=&#34;arrays&#34;&gt;Arrays&lt;/h3&gt;
+
+&lt;p&gt;Arrays in C# have the following attributes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;All elements in the array must be the same type&lt;/li&gt;
+&lt;li&gt;All elements in the array are stored within a contiguous block of memory&lt;/li&gt;
+&lt;li&gt;Individual elements of the array and be retrieved directly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In our previous meeting we discussed how variables are essentially buckets that hold values in the computer&amp;rsquo;s memory. Each of these buckets has a specific size based on the type held within.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var x = 5;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the diagram below, we see a section of memory in chunks of the size of an int.&lt;/p&gt;
+
+&lt;table style=&#34;text-align: center;&#34;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;0&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;6&lt;/td&gt;
+        &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;7&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style=&#34;background: #cff&#34;&gt;x&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say we have a situation where you want to keep track of how many times a day you think about the weekend during the week. For this, we would need to create an array that can hold five values, one for each week day.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var weekdays = new int[5];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we have a chunk of memory that looks something like this:&lt;/p&gt;
+
+&lt;table style=&#34;text-align: center;&#34;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;0&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;6&lt;/td&gt;
+        &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style=&#34;background: #cff&#34; colspan=&#34;5&#34;&gt;weekdays&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Elements in an array can be accessed, or assigned using an indexed defined by its position relative to the beginning of the array. Let&amp;rsquo;s say that you start thinking about the weekend on Wednesday afternoon. We can access this value at &lt;code&gt;weekday[2]&lt;/code&gt;. The index of Wednesday is 2, even though it is the third day of this week. That is because it is offset by two positions from the beginning of the array. Let&amp;rsquo;s set the value to 1.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;weekday[2] = 1;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now our block of memory looks something like this:&lt;/p&gt;
+
+&lt;table style=&#34;text-align: center;&#34;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;0&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;6&lt;/td&gt;
+        &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;1&lt;/td&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
+        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td style=&#34;background: #cff&#34; colspan=&#34;5&#34;&gt;weekdays&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Now&amp;rsquo;s lets say that you want to add Sunday to the list, because that is the day that you start planning your activities for the following weekend. Unfortunately, arrays are fixed in size once you create them. If you want to expand an array, you need to create a new array, and copy the values from your old array. It is a lot to keep track of, right? Well, luckily the foundation library comes with some collections that make our lives easier. In this case, the list.&lt;/p&gt;
+
+&lt;h3 id=&#34;lists&#34;&gt;Lists&lt;/h3&gt;
+
+&lt;p&gt;Lists allow you to work with a collection of values like an array, but you do not have to worry about any of the allocation issues. Lets create our list of weekdays.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var weekdays = new List&amp;lt;int&amp;gt;();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This code looks similiar to how we defined our array earlier, but we do not specific a specific number of elements contained within. This does require us to add each of the days to the list ourselves.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;weekdays.Add(0); // monday
+weekdays.Add(0); // tuesday
+weekdays.Add(0); // wendesday
+weekdays.Add(0); // thursday
+weekdays.Add(0); // friday
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can still assign values in the list like we did in the array. To set Wednesday to 1 again, we simply:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;weekday[2] = 1;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, if we decide to add in the weekdays to account for Sunday&amp;rsquo;s planning sessions we can without having to worry about how memory is managed behind the scenes.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;weekdays.Add(0); // saturday
+weekdays.Add(2); // sunday
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After we have added the weekend, we can still retrieve the value we set for Wednesday.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;Console.WriteLine(weekdays[2]);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let&amp;rsquo;s take what we have learned and apply it to some more programming problems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Write a function that returns the largest element in a list.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Write a function that concatenates two lists.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Write a function that takes an integer and returns a list of its digits.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Write a function that takes a list of strings an prints them, one per line, in a rectangular frame. For example the list &lt;code&gt;[&amp;quot;Hello&amp;quot;, &amp;quot;World&amp;quot;, &amp;quot;in&amp;quot;, &amp;quot;a&amp;quot;, &amp;quot;frame&amp;quot;]&lt;/code&gt; gets printed as:&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;*********
+* Hello *
+* World *
+* in    *
+* a     *
+* frame *
+*********
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;extra-credit&#34;&gt;Extra Credit&lt;/h3&gt;
+
+&lt;p&gt;Research about the collection type, &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/xfhwa508(v=vs.110).aspx&#34;&gt;Dictionary&lt;/a&gt; and write a program that automatically converts English text to Morse code.&lt;/p&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;For more on collections you can read the &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/7y3x785f(v=vs.110).aspx&#34;&gt;Collections and Data Structures&lt;/a&gt; section of the MSDN.&lt;/p&gt;
+
+&lt;p&gt;Many of the programming problems presented here came from &lt;a href=&#34;https://adriann.github.io/programming_problems.html&#34;&gt;Simple Programming Problems&lt;/a&gt;. This is a good resource for programming problems for beginners.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>October 2016 Meetup Notes</title>
