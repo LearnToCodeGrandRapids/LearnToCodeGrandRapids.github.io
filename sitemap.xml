@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ltcgr.com/</loc>
-    <lastmod>2016-11-01T00:00:00-04:00</lastmod>
+    <loc>http://ltcgr.com/blog/2016/12/getting-started-with-cs-algorithms/</loc>
+    <lastmod>2016-12-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
@@ -39,6 +39,64 @@
   <url>
     <loc>http://ltcgr.com/community/</loc>
     <lastmod>2016-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/about/</loc>
+    <lastmod>2016-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/blog/</loc>
+    <lastmod>2016-12-01T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/tags/c/</loc>
+    <lastmod>2016-12-01T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/community/</loc>
+    <lastmod>2016-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/categories/design/</loc>
+    <lastmod>2016-09-15T21:34:59-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/categories/languages/</loc>
+    <lastmod>2016-12-01T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/</loc>
+    <lastmod>2016-12-01T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/resources/</loc>
+    <lastmod>2016-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

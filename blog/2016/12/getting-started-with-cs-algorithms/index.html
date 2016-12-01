@@ -1,0 +1,183 @@
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.18-DEV" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  
+  <title>Getting Started with C# - Implementing Algorithms &middot; Learn to Code Grand Rapids</title>
+  
+
+  
+  <link rel="stylesheet" href="http://ltcgr.com/css/poole.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/syntax.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/hyde.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/site.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Learn to Code Grand Rapids" />
+
+  <!-- Font Awesome -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+	<body class="theme-ltcgr ">
+		<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://ltcgr.com/">
+        <img class="logo" src="http://ltcgr.com//img/logo.png" alt="Learn to Code Grand Rapids"/>
+      </a>
+      
+      <p class="lead">
+       Developing, together. 
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      
+        <li><a href="/about/"> About </a></li>
+      
+        <li><a href="/community/"> Community </a></li>
+      
+        <li><a href="/resources/"> Resources </a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav-icons">
+      
+
+<li>
+    <a href="http://ltcgr.com/index.xml" title="Subcribe">
+        <i class="fa fa-fw fa-rss"></i>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://github.com/learntocodegrandrapids" title="GitHub">
+        <i class="fa fa-fw fa-github"></i>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://www.meetup.com/Learn-To-Code-Grand-Rapids/" title="">
+        <img src="http://ltcgr.com/img/meetup.svg" alt="" />
+    </a>
+</li>
+
+    </ul>
+
+    <p>&copy; 2016. All rights reserved. </p>
+  </div>
+</div>
+
+
+		<div class="content container">
+			<div class="post">
+			 	<h1>Getting Started with C# - Implementing Algorithms</h1>
+			  <span class="post-date">Thu, Dec 1, 2016</span>
+			      <p>Below are my notes for the December 2016 meetup where we go over the basics of problem solving and implementing algorithms in C#. In this session we talk about implementing algorithms and a problem solving strategy.</p>
+
+<p></p>
+
+<h2 id="problem-solving">Problem Solving</h2>
+
+<p>While working a problem, it is important to remember to keep your spirits up. This is especially important, no matter how experienced you are.</p>
+
+<h3 id="steps">Steps</h3>
+
+<ul>
+<li>Understand the problem</li>
+<li>Solve the problem manually</li>
+<li>Write down the manual steps to solve the problem</li>
+<li>Convert the manual steps to code</li>
+</ul>
+
+<h4 id="understand-the-problem">Understand the Problem</h4>
+
+<p>As you build your coding skillset, you will become more comfortable writing code, and it will become increasingly tempting to jump right into writing code when you are working on a problem. This is almost always a mistake, because you will be proceeding based on assumptions rather than understanding the problem domain.</p>
+
+<p>The two things you can do to help understand a problem are to <strong>reread</strong> the problem, and to <strong>restate</strong> the problem. I recommend reading a problem carefully at least twice to ensure that all details sink in. This should be followed up by restating the problem to demonstrate your understanding. The best way to do this is to explain the problem to another person.</p>
+
+<h4 id="solve-the-problem-manually">Solve the Problem Manually</h4>
+
+<p>Once you are confident that you understand the problem, you are ready to solve the problem manually. If you are given some example test cases, work through the problem on pen and paper until you can figure out how to generate the desired output based on the given inputs.</p>
+
+<p>If you run into trouble solving the problem, you can try to break the problem down into smaller pieces that may be easier to solve. As you gain experience, you may find that as you break a problem down you recognize particular elements that you have solved before.</p>
+
+<h4 id="write-down-the-manual-steps-to-solve-the-problem">Write Down the Manual Steps to Solve the Problem</h4>
+
+<p>After you have figured out how to solve the problem, take time to write down the steps necessary to solve the problem. Pretend you are writing instructions for another person so they can solve the problem.</p>
+
+<h4 id="convert-the-manual-steps-to-code">Convert the Manual Steps to Code</h4>
+
+<p>When you are able to reliably solve the problem using your instructions, you are ready to start writing code. This is similar to the last step, except we are writing instructions for the computer instead of another person. As a beginner, this will be the most difficult step. It&rsquo;s important to remember that the computer will only do what you tell it to; it does not have human reasoning skills to fill in the blanks in your instructions.</p>
+
+<p>If you find yourself struggling there is a good chance there are opportunities to further break the problem down to eliminate any ambiguity.</p>
+
+<p>You may also find that you do not know exactly how to code an instruction. Feel free to experiment, try out different methods until you find one that satisfies your requirements.</p>
+
+<h2 id="keep-learning">Keep Learning</h2>
+
+<p>When you are just getting started it is more important to get a working solution than to craft an elegant masterpiece. Just remember: never to settle once you figure out how to solve things using a limited tool set. After a while you will start to build a comfort level with your coding that may encourage you to always fall back on your limited knowledge base rather than continuing to push yourself to learn new and improved ways of doing things. Keep pushing yourself, and keep learning.</p>
+
+<h2 id="additional-resources">Additional Resources</h2>
+
+<p>One of the better resources available to help develop your creative problem solving skills is the book, &ldquo;<a href="https://www.amazon.com/Think-Like-Programmer-Introduction-Creative/dp/1593274246">Think Like a Programmer</a>.&rdquo; Each chapter in the book tackles a specific programming concept and exercises are included so you can apply your knowledge.</p>
+			</div>
+
+			
+		</div>
+
+  </body>
+</html>
