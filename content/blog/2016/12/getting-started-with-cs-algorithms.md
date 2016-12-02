@@ -25,7 +25,7 @@ While working a problem, it is important to remember to keep your spirits up. Th
 
 #### Understand the Problem
 
-As you build your coding skillset, you will become more comfortable writing code, and it will become increasingly tempting to jump right into writing code when you are working on a problem. This is almost always a mistake, because you will be proceeding based on assumptions rather than understanding the problem domain.
+As you build your coding skill set, you will become more comfortable writing code, and it will become increasingly tempting to jump right into writing code when you are working on a problem. This is almost always a mistake, because you will be proceeding based on assumptions rather than understanding the problem domain.
 
 The two things you can do to help understand a problem are to **reread** the problem, and to **restate** the problem. I recommend reading a problem carefully at least twice to ensure that all details sink in. This should be followed up by restating the problem to demonstrate your understanding. The best way to do this is to explain the problem to another person.
 
@@ -51,6 +51,24 @@ You may also find that you do not know exactly how to code an instruction. Feel 
 
 When you are just getting started it is more important to get a working solution than to craft an elegant masterpiece. Just remember: never to settle once you figure out how to solve things using a limited tool set. After a while you will start to build a comfort level with your coding that may encourage you to always fall back on your limited knowledge base rather than continuing to push yourself to learn new and improved ways of doing things. Keep pushing yourself, and keep learning.
 
+### HackerRank
+
+One of the best ways to develop your coding skills is to work problems where you get immediate feedback as to whether or not your solution is working. There are many sites out there that offer opportunities to work on problems, and compete against other coders if you like. TopCoder is one of the older sites, and has a massive library of problem you can work through. Their competitive arena is undergoing a rewrite, but looks promising. In the mean time, our site of preference for coding challenges is HackerRank.
+
+We recommend that you get a HackerRank account setup, and start working problems. We recommend that you start with the problem below:
+
+## Mini-Max Sum
+
+https://www.hackerrank.com/challenges/mini-max-sum
+
+This problem challenges you to read in a list of number, and give the two sums, one of the lowest numbers and one of the highest numbers. This is a fairly straightforward problem with multiple viable solutions. For an added challenge: attempt to get the answer on a single pass of the input values.
+
 ## Additional Resources
 
 One of the better resources available to help develop your creative problem solving skills is the book, "[Think Like a Programmer](https://www.amazon.com/Think-Like-Programmer-Introduction-Creative/dp/1593274246)." Each chapter in the book tackles a specific programming concept and exercises are included so you can apply your knowledge.
+
+There are many competitive programming sites, here are some of the ones that we like:
+
+* [HackerRank](https://www.hackerrank.com)
+* [TopCoder](https://www.topcoder.com)
+* [CodeWars](https://www.codewars.com/)
