@@ -18,7 +18,6 @@ install:
     - # Do nothing. This is needed to prevent default install action "go get -t -v ./..." from happening here
 
 before_script:
-    - go get -u github.com/kardianos/govendor
     - go get github.com/spf13/hugo
     - cd $GOPATH/src/github.com/spf13/hugo
     - git checkout v0.18.1
