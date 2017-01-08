@@ -10,6 +10,7 @@ env:
         - GIT_EMAIL="jjafuller@gmail.com"
         - SOURCE_DIR="public"
         - DEPLOY_BRANCH="src"
+        - HUGO_VERSION="0.18.1"
 
 before_install:
     - openssl aes-256-cbc -K $encrypted_129c1a48241e_key -iv $encrypted_129c1a48241e_iv -in travis_key.enc -out travis_key -d
@@ -18,15 +19,13 @@ install:
     - # Do nothing. This is needed to prevent default install action "go get -t -v ./..." from happening here
 
 before_script:
-    - go get github.com/spf13/hugo
-    - cd $GOPATH/src/github.com/spf13/hugo
-    - git checkout v0.18.1
-    - make govendor
-    - cd ${TRAVIS_BUILD_DIR}/
+    - wget https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+    - tar xvzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+    - cp hugo_${HUGO_VERSION}_linux_amd64/hugo_${HUGO_VERSION}_linux_amd64 $TRAVIS_BUILD_DIR/bin/hugo
 
 script:
     - git clone https://github.com/spf13/hyde.git ./themes/hyde
-    - hugo
+    - ./bin/hugo
 
 after_success:
     - echo "ltcgr.com" > ./public/CNAME
