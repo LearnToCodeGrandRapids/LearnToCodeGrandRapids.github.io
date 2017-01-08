@@ -23,7 +23,7 @@ before_script:
     - cd $GOPATH/src/github.com/spf13/hugo
     - git checkout v0.18.1
     - make govendor
-    - cd ~/
+    - cd ${TRAVIS_BUILD_DIR}/
 
 script:
     - git clone https://github.com/spf13/hyde.git ./themes/hyde
