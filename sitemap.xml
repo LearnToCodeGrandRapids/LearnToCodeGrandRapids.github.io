@@ -42,12 +42,6 @@
   </url>
   
   <url>
-    <loc>http://ltcgr.com/about/</loc>
-    <lastmod>2016-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://ltcgr.com/blog/</loc>
     <lastmod>2016-12-01T00:00:00-04:00</lastmod>
     <priority>0</priority>
@@ -61,12 +55,6 @@
   
   <url>
     <loc>http://ltcgr.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://ltcgr.com/community/</loc>
-    <lastmod>2016-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -85,12 +73,6 @@
   <url>
     <loc>http://ltcgr.com/</loc>
     <lastmod>2016-12-01T00:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://ltcgr.com/resources/</loc>
-    <lastmod>2016-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
