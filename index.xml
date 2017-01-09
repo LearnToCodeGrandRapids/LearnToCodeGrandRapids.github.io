@@ -676,8 +676,6 @@ Console.WriteLine(secondTry);
       <guid>http://ltcgr.com/about/</guid>
       <description>
 
-&lt;h3 id=&#34;test&#34;&gt;Test&lt;/h3&gt;
-
 &lt;h3 id=&#34;mission&#34;&gt;Mission&lt;/h3&gt;
 
 &lt;p&gt;Learn to Code Grand Rapids is a group for people learning to code. Whether you are a first timer just getting your feet wet, someone trying to break into the industry, or a seasoned veteran looking to hone your skills and pass on knowledge to the next generation of coders. Your personal and professional development are important to us. We don&amp;rsquo;t just want to see you learn to code, we want to help you get that first job and then that big promotion.&lt;/p&gt;
