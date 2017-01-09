@@ -4,8 +4,6 @@ title = "About"
 menu = "main"
 +++
 
-### Test
-
 ### Mission
 
 Learn to Code Grand Rapids is a group for people learning to code. Whether you are a first timer just getting your feet wet, someone trying to break into the industry, or a seasoned veteran looking to hone your skills and pass on knowledge to the next generation of coders. Your personal and professional development are important to us. We don't just want to see you learn to code, we want to help you get that first job and then that big promotion. 
