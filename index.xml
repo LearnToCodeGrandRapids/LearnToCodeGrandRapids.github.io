@@ -2,12 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learn to Code Grand Rapids</title>
-    <link>http://ltcgr.com/index.xml</link>
+    <link>http://ltcgr.com/</link>
     <description>Recent content on Learn to Code Grand Rapids</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Dec 2016 00:00:00 -0400</lastBuildDate>
-    <atom:link href="http://ltcgr.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Apr 2017 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://ltcgr.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unit Testing Basics with xUnit and VS 2017 - Notes</title>
+      <link>http://ltcgr.com/blog/2017/04/unit-testing-basics/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://ltcgr.com/blog/2017/04/unit-testing-basics/</guid>
+      <description>In this month&amp;rsquo;s meetup we started working through the string calculator kata. We completed the first few steps, and finished after completing &amp;ldquo;support different delimiters.&amp;rdquo;
+You can download the solution from our github repo string-calculator-part1. Just follow the link, click on &amp;ldquo;clone or download,&amp;rdquo; and then click &amp;ldquo;download zip.&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Visual Studio 2017</title>
+      <link>http://ltcgr.com/blog/2017/04/setting-up-visual-studio-2017/</link>
+      <pubDate>Fri, 14 Apr 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://ltcgr.com/blog/2017/04/setting-up-visual-studio-2017/</guid>
+      <description>&lt;p&gt;During our unit testing workshop there was some confusion over which modules should be installed using the super customizable Visual Studio 2017 installer. In the past Visual Studio installers would give you the ability to do a little customization, but you always ended up with more than you needed. With Visual Studio 2017, if you don&amp;rsquo;t know what you need you might not end up with enough to actually do anything.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Getting Started with C# - Implementing Algorithms</title>
@@ -17,72 +40,7 @@
       <guid>http://ltcgr.com/blog/2016/12/getting-started-with-cs-algorithms/</guid>
       <description>&lt;p&gt;Below are my notes for the December 2016 meetup where we go over the basics of problem solving and implementing algorithms in C#. In this session we talk about implementing algorithms and a problem solving strategy.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;problem-solving&#34;&gt;Problem Solving&lt;/h2&gt;
-
-&lt;p&gt;While working a problem, it is important to remember to keep your spirits up. This is especially important, no matter how experienced you are.&lt;/p&gt;
-
-&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Understand the problem&lt;/li&gt;
-&lt;li&gt;Solve the problem manually&lt;/li&gt;
-&lt;li&gt;Write down the manual steps to solve the problem&lt;/li&gt;
-&lt;li&gt;Convert the manual steps to code&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;understand-the-problem&#34;&gt;Understand the Problem&lt;/h4&gt;
-
-&lt;p&gt;As you build your coding skill set, you will become more comfortable writing code, and it will become increasingly tempting to jump right into writing code when you are working on a problem. This is almost always a mistake, because you will be proceeding based on assumptions rather than understanding the problem domain.&lt;/p&gt;
-
-&lt;p&gt;The two things you can do to help understand a problem are to &lt;strong&gt;reread&lt;/strong&gt; the problem, and to &lt;strong&gt;restate&lt;/strong&gt; the problem. I recommend reading a problem carefully at least twice to ensure that all details sink in. This should be followed up by restating the problem to demonstrate your understanding. The best way to do this is to explain the problem to another person.&lt;/p&gt;
-
-&lt;h4 id=&#34;solve-the-problem-manually&#34;&gt;Solve the Problem Manually&lt;/h4&gt;
-
-&lt;p&gt;Once you are confident that you understand the problem, you are ready to solve the problem manually. If you are given some example test cases, work through the problem on pen and paper until you can figure out how to generate the desired output based on the given inputs.&lt;/p&gt;
-
-&lt;p&gt;If you run into trouble solving the problem, you can try to break the problem down into smaller pieces that may be easier to solve. As you gain experience, you may find that as you break a problem down you recognize particular elements that you have solved before.&lt;/p&gt;
-
-&lt;h4 id=&#34;write-down-the-manual-steps-to-solve-the-problem&#34;&gt;Write Down the Manual Steps to Solve the Problem&lt;/h4&gt;
-
-&lt;p&gt;After you have figured out how to solve the problem, take time to write down the steps necessary to solve the problem. Pretend you are writing instructions for another person so they can solve the problem.&lt;/p&gt;
-
-&lt;h4 id=&#34;convert-the-manual-steps-to-code&#34;&gt;Convert the Manual Steps to Code&lt;/h4&gt;
-
-&lt;p&gt;When you are able to reliably solve the problem using your instructions, you are ready to start writing code. This is similar to the last step, except we are writing instructions for the computer instead of another person. As a beginner, this will be the most difficult step. It&amp;rsquo;s important to remember that the computer will only do what you tell it to; it does not have human reasoning skills to fill in the blanks in your instructions.&lt;/p&gt;
-
-&lt;p&gt;If you find yourself struggling there is a good chance there are opportunities to further break the problem down to eliminate any ambiguity.&lt;/p&gt;
-
-&lt;p&gt;You may also find that you do not know exactly how to code an instruction. Feel free to experiment, try out different methods until you find one that satisfies your requirements.&lt;/p&gt;
-
-&lt;h2 id=&#34;keep-learning&#34;&gt;Keep Learning&lt;/h2&gt;
-
-&lt;p&gt;When you are just getting started it is more important to get a working solution than to craft an elegant masterpiece. Just remember: never to settle once you figure out how to solve things using a limited tool set. After a while you will start to build a comfort level with your coding that may encourage you to always fall back on your limited knowledge base rather than continuing to push yourself to learn new and improved ways of doing things. Keep pushing yourself, and keep learning.&lt;/p&gt;
-
-&lt;h3 id=&#34;hackerrank&#34;&gt;HackerRank&lt;/h3&gt;
-
-&lt;p&gt;One of the best ways to develop your coding skills is to work problems where you get immediate feedback as to whether or not your solution is working. There are many sites out there that offer opportunities to work on problems, and compete against other coders if you like. TopCoder is one of the older sites, and has a massive library of problem you can work through. Their competitive arena is undergoing a rewrite, but looks promising. In the mean time, our site of preference for coding challenges is HackerRank.&lt;/p&gt;
-
-&lt;p&gt;We recommend that you get a HackerRank account setup, and start working problems. We recommend that you start with the problem below:&lt;/p&gt;
-
-&lt;h2 id=&#34;mini-max-sum&#34;&gt;Mini-Max Sum&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.hackerrank.com/challenges/mini-max-sum&#34;&gt;https://www.hackerrank.com/challenges/mini-max-sum&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This problem challenges you to read in a list of number, and give the two sums, one of the lowest numbers and one of the highest numbers. This is a fairly straightforward problem with multiple viable solutions. For an added challenge: attempt to get the answer on a single pass of the input values.&lt;/p&gt;
-
-&lt;h2 id=&#34;additional-resources&#34;&gt;Additional Resources&lt;/h2&gt;
-
-&lt;p&gt;One of the better resources available to help develop your creative problem solving skills is the book, &amp;ldquo;&lt;a href=&#34;https://www.amazon.com/Think-Like-Programmer-Introduction-Creative/dp/1593274246&#34;&gt;Think Like a Programmer&lt;/a&gt;.&amp;rdquo; Each chapter in the book tackles a specific programming concept and exercises are included so you can apply your knowledge.&lt;/p&gt;
-
-&lt;p&gt;There are many competitive programming sites, here are some of the ones that we like:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.hackerrank.com&#34;&gt;HackerRank&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.topcoder.com&#34;&gt;TopCoder&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.codewars.com/&#34;&gt;CodeWars&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -93,213 +51,7 @@
       <guid>http://ltcgr.com/blog/2016/11/getting-started-with-cs-part2/</guid>
       <description>&lt;p&gt;Below are my notes for the November 2016 meetup where we go over the basics of C# and work through some sample problems. We highly recommend that you &lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/&#34;&gt;watch the video series&lt;/a&gt; associated with collections and data structures since it is far more complete.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;programming-problems&#34;&gt;Programming Problems&lt;/h2&gt;
-
-&lt;p&gt;We begin with some basic programming problems that allow us to use the skills we learned in our last session. You can &lt;a href=&#34;https://github.com/LearnToCodeGrandRapids/getting-started-with-cs-part2&#34;&gt;download stubs for all the programming problems&lt;/a&gt; for this meetup on our github.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Write a program that asks the user for her name and greets her with her name.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Write a program that prints the next 20 leap years.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Write a program that asks the user for a number n and prints the sum of the numbers 1 to n&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;collections&#34;&gt;Collections&lt;/h2&gt;
-
-&lt;p&gt;Thus far we have been using primatives, and strings capable of storing a single value. It is frequently useful to work with a collection of values as you develop programs. One of the simpliest, and most widely used collection type is the array.&lt;/p&gt;
-
-&lt;h3 id=&#34;arrays&#34;&gt;Arrays&lt;/h3&gt;
-
-&lt;p&gt;Arrays in C# have the following attributes:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;All elements in the array must be the same type&lt;/li&gt;
-&lt;li&gt;All elements in the array are stored within a contiguous block of memory&lt;/li&gt;
-&lt;li&gt;Individual elements of the array and be retrieved directly&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In our previous meeting we discussed how variables are essentially buckets that hold values in the computer&amp;rsquo;s memory. Each of these buckets has a specific size based on the type held within.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var x = 5;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the diagram below, we see a section of memory in chunks of the size of an int.&lt;/p&gt;
-
-&lt;table style=&#34;text-align: center;&#34;&gt;
-    &lt;tr&gt;
-        &lt;td&gt;0&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;6&lt;/td&gt;
-        &lt;td&gt;7&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;7&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td style=&#34;background: #cff&#34;&gt;x&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Let&amp;rsquo;s say we have a situation where you want to keep track of how many times a day you think about the weekend during the week. For this, we would need to create an array that can hold five values, one for each week day.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var weekdays = new int[5];
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now we have a chunk of memory that looks something like this:&lt;/p&gt;
-
-&lt;table style=&#34;text-align: center;&#34;&gt;
-    &lt;tr&gt;
-        &lt;td&gt;0&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;6&lt;/td&gt;
-        &lt;td&gt;7&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td style=&#34;background: #cff&#34; colspan=&#34;5&#34;&gt;weekdays&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Elements in an array can be accessed, or assigned using an indexed defined by its position relative to the beginning of the array. Let&amp;rsquo;s say that you start thinking about the weekend on Wednesday afternoon. We can access this value at &lt;code&gt;weekday[2]&lt;/code&gt;. The index of Wednesday is 2, even though it is the third day of this week. That is because it is offset by two positions from the beginning of the array. Let&amp;rsquo;s set the value to 1.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;weekday[2] = 1;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now our block of memory looks something like this:&lt;/p&gt;
-
-&lt;table style=&#34;text-align: center;&#34;&gt;
-    &lt;tr&gt;
-        &lt;td&gt;0&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;6&lt;/td&gt;
-        &lt;td&gt;7&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;1&lt;/td&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
-        &lt;td style=&#34;background: #cfc&#34;&gt;0&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td style=&#34;background: #ccc&#34;&gt;&amp;nbsp;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td style=&#34;background: #cff&#34; colspan=&#34;5&#34;&gt;weekdays&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Now&amp;rsquo;s lets say that you want to add Sunday to the list, because that is the day that you start planning your activities for the following weekend. Unfortunately, arrays are fixed in size once you create them. If you want to expand an array, you need to create a new array, and copy the values from your old array. It is a lot to keep track of, right? Well, luckily the foundation library comes with some collections that make our lives easier. In this case, the list.&lt;/p&gt;
-
-&lt;h3 id=&#34;lists&#34;&gt;Lists&lt;/h3&gt;
-
-&lt;p&gt;Lists allow you to work with a collection of values like an array, but you do not have to worry about any of the allocation issues. Lets create our list of weekdays.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var weekdays = new List&amp;lt;int&amp;gt;();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This code looks similiar to how we defined our array earlier, but we do not specific a specific number of elements contained within. This does require us to add each of the days to the list ourselves.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;weekdays.Add(0); // monday
-weekdays.Add(0); // tuesday
-weekdays.Add(0); // wendesday
-weekdays.Add(0); // thursday
-weekdays.Add(0); // friday
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We can still assign values in the list like we did in the array. To set Wednesday to 1 again, we simply:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;weekday[2] = 1;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now, if we decide to add in the weekdays to account for Sunday&amp;rsquo;s planning sessions we can without having to worry about how memory is managed behind the scenes.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;weekdays.Add(0); // saturday
-weekdays.Add(2); // sunday
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After we have added the weekend, we can still retrieve the value we set for Wednesday.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;Console.WriteLine(weekdays[2]);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Let&amp;rsquo;s take what we have learned and apply it to some more programming problems:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Write a function that returns the largest element in a list.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Write a function that concatenates two lists.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Write a function that takes an integer and returns a list of its digits.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Write a function that takes a list of strings an prints them, one per line, in a rectangular frame. For example the list &lt;code&gt;[&amp;quot;Hello&amp;quot;, &amp;quot;World&amp;quot;, &amp;quot;in&amp;quot;, &amp;quot;a&amp;quot;, &amp;quot;frame&amp;quot;]&lt;/code&gt; gets printed as:&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;*********
-* Hello *
-* World *
-* in    *
-* a     *
-* frame *
-*********
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;extra-credit&#34;&gt;Extra Credit&lt;/h3&gt;
-
-&lt;p&gt;Research about the collection type, &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/xfhwa508(v=vs.110).aspx&#34;&gt;Dictionary&lt;/a&gt; and write a program that automatically converts English text to Morse code.&lt;/p&gt;
-
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-
-&lt;p&gt;For more on collections you can read the &lt;a href=&#34;https://msdn.microsoft.com/en-us/library/7y3x785f(v=vs.110).aspx&#34;&gt;Collections and Data Structures&lt;/a&gt; section of the MSDN.&lt;/p&gt;
-
-&lt;p&gt;Many of the programming problems presented here came from &lt;a href=&#34;https://adriann.github.io/programming_problems.html&#34;&gt;Simple Programming Problems&lt;/a&gt;. This is a good resource for programming problems for beginners.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -310,41 +62,7 @@ weekdays.Add(2); // sunday
       <guid>http://ltcgr.com/blog/2016/10/october-2016/</guid>
       <description>&lt;p&gt;Our October 2016 meetup focused on getting started with C#. We built a basic application, and examined some of the fundamental building blocks of programming: variables, data types, conditions, and iteration. The essential functionality of Xamarin Studio was examined.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;The material for the meetup was based on the video course &lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/&#34;&gt;C# Fundamentals for Absolute Beginners&lt;/a&gt;. This course starts from scratch, assuming that you know little to nothing about programming. If you are just getting started and C# is your first language we strongly recommend you watch this video series. Notable differences between our meetup and the videos is the IDE uses. The videos demonstrate Visual Studio Express, whereas we focused on Xamarin Studio. We have chosen to use Xamarin Studio in our meetups because it is cross platform and can run on affordable hardware.&lt;/p&gt;
-
-&lt;p&gt;You can review the workshop notes for the meetup here: &lt;a href=&#34;http://ltcgr.com/blog/2016/10/getting-started-with-cs-part1/&#34;&gt;Getting Started with C# - Part 1&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;colearning&#34;&gt;coLearning&lt;/h2&gt;
-
-&lt;p&gt;Henry Morrow took a few moments to talk about &lt;a href=&#34;http://workthefactory.com/colearning/&#34;&gt;coLearning&lt;/a&gt; opportunities coming up at &lt;a href=&#34;http://workthefactory.com/&#34;&gt;the Factory&lt;/a&gt;. In January, two courses are currently scheduled: Modern Web, and UX Design.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;coLearning brings small groups of peers together to learn key skills in technology, design, and entrepreneurship through mentorship and programs.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;givecamp&#34;&gt;GiveCamp&lt;/h2&gt;
-
-&lt;p&gt;In our look at upcoming community activities we took some time to discuss GiveCamp.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Through GR GiveCamp, non-profit organizations with specific technology needs are matched with teams of local technology professionals who volunteer their time over the course of one weekend to develop free technology solutions such as new websites, databases, e-newsletter programs, and social media campaigns.&lt;/p&gt;
-
-&lt;p&gt;Staff and resources at nonprofit organizations are stretched thin. GiveCamp provides technology solutions to support program, outreach, development, and operational objectives for nonprofits who may not otherwise be able to afford them.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;GiveCamp is a great way to meet other tech professionals in the area while contributing for worthwhile nonprofits. This event needs people of all skill levels, even beginners. If you are interested, all you need to do is fill out the &lt;a href=&#34;http://grgivecamp.org/volunteers/&#34;&gt;volunteer form&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This year&amp;rsquo;s GiveCamp is &lt;strong&gt;November 4-6&lt;/strong&gt; at &lt;strong&gt;Spectrum Health&lt;/strong&gt; (&lt;strong&gt;25 Ottawa SW, 6th floor, Grand Rapids MI&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p&gt;For additional details check out the &lt;a href=&#34;http://grgivecamp.org/&#34;&gt;GiveCamp website&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
-
-&lt;p&gt;Some coders in the group requested some basic exercises so they can try out some of the knowledge they have obtained. My recommendation for individuals just getting started would be to start with &lt;a href=&#34;https://adriann.github.io/programming_problems.html&#34;&gt;Simple Programming Problems&lt;/a&gt;. These programming problems are designed for people who are just getting started, and get progressively more difficult at you advance.&lt;/p&gt;
-
-&lt;p&gt;If you find these exercises too simple, the next step would be to start working through the problems on &lt;a href=&#34;https://projecteuler.net/&#34;&gt;Project Euler&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -355,258 +73,7 @@ weekdays.Add(2); // sunday
       <guid>http://ltcgr.com/blog/2016/10/getting-started-with-cs-part1/</guid>
       <description>&lt;p&gt;Below are my notes for the October 2016 meetup where we go over the basics of C#, and do an overview of Xamarin Studio. We highly recommend that you watch the video series associated with this material since it is far more complete.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;setting-up-your-development-environment&#34;&gt;Setting up your Development Environment&lt;/h2&gt;
-
-&lt;p&gt;For this workshop, we will be using Xamarin Studio (or MonoDevelop if you are using linux). The first thing we will do is get the environment setup.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;For macOS you can use brew: &lt;code&gt;brew cask install xamarin-studio&lt;/code&gt; (&lt;a href=&#34;http://macappstore.org/xamarin-studio/&#34;&gt;click here&lt;/a&gt; for detailed directions).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;For Windows, use can &lt;a href=&#34;https://www.xamarin.com/download&#34;&gt;download the universal installer&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;NOTE: If you are using the offline installers for Windows rather than the installer listed above, you need to install GTK# for .NET, and MSBuild Tools before installing Xamarin Studio.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;For linux, your distribution probably already has a package for monodevelop, but if it doesn&amp;rsquo;t you can &lt;a href=&#34;http://www.monodevelop.com/download/&#34;&gt;download the source here&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;your-first-c-application&#34;&gt;Your First C# Application&lt;/h2&gt;
-
-&lt;p&gt;Open Xamarin Studio&lt;/p&gt;
-
-&lt;p&gt;Click on File -&amp;gt; New Solution&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/new-solution.png&#34; alt=&#34;New solution screenshot&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the dialog, select .NET, and then &amp;ldquo;Console Project.&amp;rdquo; Click, &amp;ldquo;Next.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/console-project.png&#34; alt=&#34;New Console Project&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the Project Name box, enter HelloWorld, and then click, &amp;ldquo;Create.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/hello-world.png&#34; alt=&#34;New Console Project&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After a moment you should be taken to the Program.cs file within your new project. It should look something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;using System;
-
-namespace HelloWorld
-{
-	class MainClass
-	{
-		public static void Main(string[] args)
-		{
-			Console.WriteLine(&amp;quot;Hello World!&amp;quot;);
-		}
-	}
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;At this point you could run the application. It would print &amp;ldquo;Hello World!&amp;rdquo; to a console window and then immeidately exit. It is difficult to see if your programming is generating the correct output when it just blinks on the screen. We are going to add a line to the program to make it wait for keyboard input before closing so that we can visually inspect the output.&lt;/p&gt;
-
-&lt;p&gt;After the &lt;code&gt;Console.WriteLine(&amp;quot;Hello World!&amp;quot;);&lt;/code&gt; line, add a new line, and then add the following: &lt;code&gt;Console.ReadLine();&lt;/code&gt; this will cause the program to pause after printing Hello World! until you press return.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;		public static void Main(string[] args)
-		{
-			Console.WriteLine(&amp;quot;Hello World!&amp;quot;);
-			Console.ReadLine();
-		}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now we can run the application. Be sure you have saved your change, and then click on the play button to execute the program.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/play.png&#34; alt=&#34;Play button&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You should now see a console window with the words &amp;ldquo;Hello World!&amp;rdquo; printed on screen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/console-hello.png&#34; alt=&#34;Console hello&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;breaking-down-our-first-program&#34;&gt;Breaking Down Our First Program&lt;/h2&gt;
-
-&lt;p&gt;The .NET framework has two fundamental components that make your life as a developer much easier.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Class Library - The set of prewritten libraries that take care of routine development activities so that you do not have to. This includes such routines as handling inputs and outputs for your program.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Runtime - The protective bubble in which your application lives. The runtime handles low level concerns so that you can focus on your application rather than being concerned by how the computer is managing memory, etc.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In the program that we just wrote, we have already taken advantage of the class library. The command &lt;code&gt;Console.WriteLine(&amp;quot;Hello World!&amp;quot;);&lt;/code&gt; handles writing the text, &amp;ldquo;Hello World!&amp;rdquo; to the console. All we have to be concerned about is what we want printed on the screen. The Console library takes care of everything necessary to take that information and display it in the console window for us.&lt;/p&gt;
-
-&lt;h3 id=&#34;code-blocks&#34;&gt;Code Blocks&lt;/h3&gt;
-
-&lt;p&gt;You may have noticed that the application has several sets of curly braces. Each of these sets of curly braces represents a block of code. Each code block represents a specific scope for the code that exists within it. We will talk about the implications of this later on, for now lets focus on the inner most set of curly braces.&lt;/p&gt;
-
-&lt;p&gt;This code block is named Main. The name is what is used to invoke a particular code block. This code block is a method, since it is defined within the scope of a class. In this case, the class is Program. This of the Main method in the Program class is that it is executed when the program is runs.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s take a look at the class Program. You can think of a class as an organizational structure. It is a way to group together common data, and functionality.&lt;/p&gt;
-
-&lt;p&gt;The outermost set of curly braces is the namespace HelloWorld. Namespaces are another way of organizing your code. Namespaces represent a collection of related classes.&lt;/p&gt;
-
-&lt;h3 id=&#34;inside-main&#34;&gt;Inside Main&lt;/h3&gt;
-
-&lt;p&gt;Revisiting the command &lt;code&gt;Console.WriteLine(&amp;quot;Hello World!&amp;quot;);&lt;/code&gt; we can now think about this in the context established earlier. We see the method WriteLine on the class Console. The next line references another method named ReadLine, also within the Console class. Since both of these methods deal with the console it makes sense for them to be in a common class named, Console, right?&lt;/p&gt;
-
-&lt;p&gt;Both of these methods were written by someone at Microsoft as part of the class library. We benefit from their work by simply invoking methods they wrote using the syntax above.&lt;/p&gt;
-
-&lt;p&gt;In &lt;code&gt;Console.WriteLine(&amp;quot;Hello World!&amp;quot;);&lt;/code&gt; notice that there is a dot between the class Console and the method WriteLine. The dot is called a member accessor. This tells the program that you want to access something on the class, in this case, the method WriteLine.&lt;/p&gt;
-
-&lt;p&gt;The parentheses indicate the input we would like the method to use during execution. In this case, we are passing in the string literal, &amp;ldquo;Hello World!&amp;rdquo; This means we are explicitly defining the value to be displayed on screen by the method. Later on we will talk about variables and how they can be used as input as well. Notice that the ReadLine method has parentheses, but there is nothing between them. In this case, we are invoking the method, but are not passing in any values.&lt;/p&gt;
-
-&lt;p&gt;The semicolon at the end of the line indicates the end of a statement. A statement is a single action to be taken during program execution. We have a line between the two method calls for readability. However, since both statements end in a semicolon the line break is not necessary for the program to function. In fact, the entire program could be written on a single line. I wouldn&amp;rsquo;t recommend doing that both for your own sanity and for the sanity of anyone having to maintain your code.&lt;/p&gt;
-
-&lt;p&gt;Alternatively, you can take a single statement and break it up between multiple lines, again for readability. It does not make sense in this case since the statements are so short, but we will be using this functionality in the future.&lt;/p&gt;
-
-&lt;h2 id=&#34;xamarin-studio&#34;&gt;Xamarin Studio&lt;/h2&gt;
-
-&lt;h3 id=&#34;syntax-highlighting&#34;&gt;Syntax Highlighting&lt;/h3&gt;
-
-&lt;p&gt;You will notice that some of the code within the IDE is colored differently. The IDE is assisting in making the code easier to read by color coding different elements. By default within Xamarin Studio, classes are highlighted in blue, reserved words are highlighted in teal, and strings are highlighted in orange.&lt;/p&gt;
-
-&lt;h3 id=&#34;solution-structure&#34;&gt;Solution Structure&lt;/h3&gt;
-
-&lt;p&gt;In the pane to the far left, you will see the solution for our program. At the highest level is the solution, and below that is the project. Our program is a single project, but a solution can be made up of multiple projects. It is not important now, but as you develop increasingly complicated applications, organizing your code into different projects will be invaluable. Within the project are the various pieces that make up the project; so far we are only concerned with the Program.cs file.&lt;/p&gt;
-
-&lt;h3 id=&#34;debug-vs-release&#34;&gt;Debug vs Release&lt;/h3&gt;
-
-&lt;p&gt;By default, when you build applications in Xamarin Studio the result is intended to be used for debugging. As a result, it includes additional metadata and certain optimizations are disabled. This is great when you are developing an application, but not when you are ready to distribute it to other people. When you reach a point where you are ready to create a build for distribution, you will want to change your build target to Release, as seen below:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/debug.png&#34; alt=&#34;Console hello&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;where-are-the-files&#34;&gt;Where are the Files?&lt;/h3&gt;
-
-&lt;p&gt;When you are ready to grab your executable, you can access the folder that contains your project by right clicking on it in the solution explorer. On a Mac, you select &amp;ldquo;Reveal in Finder.&amp;rdquo; On a PC, select &amp;ldquo;Open in Explorer?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/reveal-in-finder.png&#34; alt=&#34;Console hello&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Once your file browser has opened, navigate to the bin directory. Inside this directory you should see a Debug folder, and possibly a Release folder. Each of these folders contains the build for the specified target.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/release.png&#34; alt=&#34;Console hello&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;debugging&#34;&gt;Debugging&lt;/h3&gt;
-
-&lt;p&gt;While you are developing your application, you may find it valuable to be able to step through the execution of your program. This will allow you to monitor the application as execution progresses.&lt;/p&gt;
-
-&lt;p&gt;In order to trigger the debugger, we must set a breakpoint within the application. At this breakpoint the program execution will pause, and allow us to control further execution of the program, inspect the state of the application, and even change the state of the application as it executes.&lt;/p&gt;
-
-&lt;p&gt;To create a breakpoint, click in the gray area to the left of the line numbers in the editor. If you did this correctly, there should be a red dot where you clicked.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/set-breakpoint.png&#34; alt=&#34;Console hello&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Now, to start debugging click play like we did earlier to start the program. At this point we should see the the line we set the breakpoint highlighted in yellow. This indicates that the program is currently paused, and ready to execute the highlighted line.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/debugging.png&#34; alt=&#34;Console hello&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;intellisense&#34;&gt;Intellisense&lt;/h3&gt;
-
-&lt;p&gt;You may have noticed earlier that a drop-down list appears when you were typing the command &lt;code&gt;Console.ReadLine();&lt;/code&gt; after you typed the member accessor. By typing the member accessor, the IDE kicked in intellisense which anticipated your next action, and attempts to help by presenting you with the set of members on the Console class. This can be very helpful as you work on applications, because you will not have to remember everything about the structure of the application, or the classes that you are using.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/intellisense.png&#34; alt=&#34;Console hello&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;red-squiggles&#34;&gt;Red Squiggles&lt;/h3&gt;
-
-&lt;p&gt;In the example below, note that there is a red squiggle under &lt;code&gt;WriteLne&lt;/code&gt; this is the IDE catching an error in the code. Here we have a typo, we missed the &amp;ldquo;i&amp;rdquo; in Line in our method. As a result, it highlighted the mistake by indicating it with the red squiggle. You can usually highlight over a squiggle to get a tool tip that indicates why it is there. The IDE will not find all errors, but it is pretty good at picking up simple errors like this one.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ltcgr.com/blog/2016/10/red-squiggle.png&#34; alt=&#34;Console hello&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;variables&#34;&gt;Variables&lt;/h2&gt;
-
-&lt;p&gt;Let&amp;rsquo;s consider an algebraic function, 5 + 7 = x. You have probably seen an equation like this in a math class, typically with the directive: solve for x. This scenario is pretty simple, as x is 12. Now, let&amp;rsquo;s extend this thinking into code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var x = 7;
-var y = x + 3;
-Console.WriteLine(y);
-Console.ReadLine();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What do you think will be the output written to the console? Let&amp;rsquo;s find out.&lt;/p&gt;
-
-&lt;p&gt;Create another program using the direction above, and call it &lt;code&gt;Variables&lt;/code&gt;. Once the project has been created, and finishes loading replace the line &lt;code&gt;Console.WriteLine(&amp;quot;Hello World!&amp;quot;);&lt;/code&gt; with the code listed above, and then run it.&lt;/p&gt;
-
-&lt;p&gt;Was &lt;code&gt;10&lt;/code&gt; written to the console? If so, everything worked as expected.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s break this down. In this code sample, we have &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt;, which are called variables. A variable is just a way to hold a value during program execution. In this case, our variables are numbers, integers to be specific. Variables can be pretty much any type available to you; numbers, strings, dates, etc. You can think of a variable as a bucket in the computer&amp;rsquo;s memory where you can put data into and retrieve data from.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;var&lt;/code&gt; keyword tells the compiler that we want to initialize a variable, and we want the compiler to figure out what type it should be based on our usage. In our code sample, we are only using whole numbers that are small in scope. So, the compiler will determine that it should use integers (&lt;code&gt;int&lt;/code&gt;) for the values. An integer is a mathematical concept for a number that has not fractional or decimal value. An integer can be pretty large, a little over two billion either positive or negative. If we wanted to store larger values we would have to use a different data type that reserves enough memory for larger values. If we wanted to be explicit, we could have used the keyword for the specific type we wanted to use, i.e., &lt;code&gt;int x = 7;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;In our example, we have two variable assignments. The equals sign is the assignment operator. This is where we are telling the run time to store values in memory for retrieval later on.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var x = 7;
-var y = x + 3;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the line, &lt;code&gt;Console.WriteLine(y);&lt;/code&gt; we are telling the run time to go out and retrieve the value stored in the variable y so that it can be displayed in the console.&lt;/p&gt;
-
-&lt;p&gt;We can also store text in memory.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var firstName = &amp;quot;Jeffrey&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the example above, we have created the variable &lt;code&gt;firstName&lt;/code&gt; and assigned it the text value &lt;code&gt;Jeffrey&lt;/code&gt;. The type of this variable is called a string. A string is special kind of variable that allows you to store text in memory. Notice how we named the variable, firstName. The f is lowecase, but the n is uppercase. This method of naming is called camel case; it is a standard convention for variable naming in C# applications.&lt;/p&gt;
-
-&lt;p&gt;C# is case sensitive. It is possible to use the variables &lt;code&gt;firstName&lt;/code&gt; and &lt;code&gt;firstname&lt;/code&gt; in the same program, and have them hold different values, so you want to be very careful about what you are typing.&lt;/p&gt;
-
-&lt;h2 id=&#34;converting-data-types&#34;&gt;Converting Data Types&lt;/h2&gt;
-
-&lt;p&gt;Once a variable has been established, its type is fixed. You may have a situation where you want to convert the data held within a variable from one type to another. Let&amp;rsquo;s take the example of an address.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var city = &amp;quot;Grand Rapids&amp;quot;;
-var state = &amp;quot;MI&amp;quot;;
-var zip = 49544;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In this example, we have three variables. The first two are strings, and the last is an integer. If we wanted to format this information as an address, the data within the zip field would need to be converted to a string.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var address = $&amp;quot;{city}, {state} {zip}&amp;quot;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This statement would result in a string variable with the value &lt;code&gt;Grand Rapids, MI 49544&lt;/code&gt;. The method used to build the new string is called string interpolation. We will discuss that more in detail later. For now the important thing to recognize is that in this scenario the integer value stored in zip is &lt;em&gt;implicitly&lt;/em&gt; converted to a string.&lt;/p&gt;
-
-&lt;p&gt;What is happening in implicit conversion? Implicit conversion to a string is effectively making this call &lt;code&gt;zip.toString()&lt;/code&gt;. Most datatypes in C# are actually objects which define a method called &lt;code&gt;toString&lt;/code&gt; that defines how the type should be represented as a string. There are other built-in methods that can be used to perform implicit conversions between some data types.&lt;/p&gt;
-
-&lt;p&gt;You usually want to use &lt;em&gt;explicit&lt;/em&gt; type conversions rather than implicit, as implicit conversions may not work as expected resulting in subtle bugs which are difficult to find. Explicit conversions require you to define in code how the conversion would take place.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;int loadedState = state + zip;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you put in this line of code, your program is not going to build. Since state is a string and there is not reliable way for the compiler to convert the string to an int. In a string contains a number, such as &lt;code&gt;&amp;quot;4&amp;quot;&lt;/code&gt; it might make sense to convert it. This can be done in the following way:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;int loadedState = int.Parse(state) + zip;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In this case, we are telling the program that the variable state is a string that contains an integer, and that we would like to parse that integer out of the string. Now your program will compile, but it will not work.&lt;/p&gt;
-
-&lt;p&gt;When the program attempts to convert MI to an integer it fails, because MI is not an integer. Let&amp;rsquo;s step back and try another method:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;var x = 7;
-var y = &amp;quot;5&amp;quot;;
-
-var secondTry = x + int.Parse(y);
-
-Console.WriteLine(secondTry);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If we run this code, we should see the value &lt;code&gt;12&lt;/code&gt; displayed in the console.&lt;/p&gt;
-
-&lt;h2 id=&#34;next-time&#34;&gt;Next Time&amp;hellip;&lt;/h2&gt;
-
-&lt;p&gt;In the next part, we will continue covering the elements of programming in C#.&lt;/p&gt;
-
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-
-&lt;p&gt;This workshop covers material from the &lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/&#34;&gt;C# Fundamentals for Absolute Beginners&lt;/a&gt; series. The video segments in the course are very thorough, and we recommend you view them in addition to the materials presented here as this post contains a subset of the information in the videos. Note that the videos use Visual Studio Express rather than Xamarin Studio, so while the IDE features are similar they are different. The code backing the solutions is identical.&lt;/p&gt;
-
-&lt;p&gt;This part covers the material from the following segments:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/03&#34;&gt;3 - Your First C# Program&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/04&#34;&gt;4 - Dissecting the First C# Program You Created&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/05&#34;&gt;5 - Quick Overview of the Visual C# Express Edition IDE&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/06&#34;&gt;6 - Declaring Variables and Assigning Values Duration&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -615,32 +82,8 @@ Console.WriteLine(secondTry);
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>http://ltcgr.com/resources/</guid>
-      <description>
-
-&lt;h2 id=&#34;beginner&#34;&gt;Beginner&lt;/h2&gt;
-
-&lt;p&gt;These resources for people who are justing starting their learning to code journey.&lt;/p&gt;
-
-&lt;h3 id=&#34;videos&#34;&gt;Videos&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://channel9.msdn.com/Series/C-Fundamentals-for-Absolute-Beginners/&#34;&gt;C# Fundamentals for Absolute Beginners&lt;/a&gt; - If you are just getting started and C# is your first language we strongly recommend you watch this video series.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;practice-problems&#34;&gt;Practice Problems&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://adriann.github.io/programming_problems.html&#34;&gt;Simple Programming Problems&lt;/a&gt; - These programming problems are designed for people who are just getting started, and get progressively more difficult at you advance.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://projecteuler.net/&#34;&gt;Project Euler&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;training-programs&#34;&gt;Training Programs&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.com/&#34;&gt;freeCodeCamp&lt;/a&gt; - Learn web development using JavaScript.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Beginner These resources for people who are justing starting their learning to code journey.
+Videos  C# Fundamentals for Absolute Beginners - If you are just getting started and C# is your first language we strongly recommend you watch this video series.  Practice Problems  Simple Programming Problems - These programming problems are designed for people who are just getting started, and get progressively more difficult at you advance.</description>
     </item>
     
     <item>
@@ -653,19 +96,7 @@ Console.WriteLine(secondTry);
 
 &lt;p&gt;&lt;a href=&#34;http://slides.com/ericdowning/solid-design-principles&#34;&gt;http://slides.com/ericdowning/solid-design-principles&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;referenced-resources&#34;&gt;Referenced Resources&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.oodesign.com/dependency-inversion-principle.html&#34;&gt;http://www.oodesign.com/dependency-inversion-principle.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074&#34;&gt;http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design&#34;&gt;https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.vikingcodeschool.com/software-engineering-basics/solid-design-principles&#34;&gt;https://www.vikingcodeschool.com/software-engineering-basics/solid-design-principles&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -674,45 +105,7 @@ Console.WriteLine(secondTry);
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>http://ltcgr.com/about/</guid>
-      <description>
-
-&lt;h3 id=&#34;mission&#34;&gt;Mission&lt;/h3&gt;
-
-&lt;p&gt;Learn to Code Grand Rapids is a group for people learning to code. Whether you are a first timer just getting your feet wet, someone trying to break into the industry, or a seasoned veteran looking to hone your skills and pass on knowledge to the next generation of coders. Your personal and professional development are important to us. We don&amp;rsquo;t just want to see you learn to code, we want to help you get that first job and then that big promotion.&lt;/p&gt;
-
-&lt;h3 id=&#34;strategy&#34;&gt;Strategy&lt;/h3&gt;
-
-&lt;p&gt;We focus not only on coding skills, but also on what we consider timeless skills that provide a solid foundation for any software developer.&lt;/p&gt;
-
-&lt;h4 id=&#34;timeless-skills&#34;&gt;Timeless Skills&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Software Design&lt;/li&gt;
-&lt;li&gt;Tools (source control, build, editors, servers, etc&amp;hellip;)&lt;/li&gt;
-&lt;li&gt;Data Storage&lt;/li&gt;
-&lt;li&gt;Refactoring&lt;/li&gt;
-&lt;li&gt;Debugging&lt;/li&gt;
-&lt;li&gt;Testing&lt;/li&gt;
-&lt;li&gt;Networking&lt;/li&gt;
-&lt;li&gt;Security&lt;/li&gt;
-&lt;li&gt;Technical Writing&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;coding-skills&#34;&gt;Coding Skills&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Languages&lt;/li&gt;
-&lt;li&gt;Reading Specifications&lt;/li&gt;
-&lt;li&gt;Writing and Teaching&lt;/li&gt;
-&lt;li&gt;Reading Code&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
-
-&lt;p&gt;In December of 2014 Theo Voss created the Learn to Code Grand Rapids group to help people interested in coding figure out what to learn and to explain coding terminology. Meetups consisted of a mix of presentations, workshops, and recommendations on other Meetups happening each month.&lt;/p&gt;
-
-&lt;p&gt;Jeffrey Fuller took over the group in September of 2016. His combination of industry experience, and love of learning made him a natural choice. While the group continued to focus on its mission, a new emphasis on professional development was added.&lt;/p&gt;
-</description>
+      <description>Mission Learn to Code Grand Rapids is a group for people learning to code. Whether you are a first timer just getting your feet wet, someone trying to break into the industry, or a seasoned veteran looking to hone your skills and pass on knowledge to the next generation of coders. Your personal and professional development are important to us. We don&amp;rsquo;t just want to see you learn to code, we want to help you get that first job and then that big promotion.</description>
     </item>
     
     <item>
@@ -721,220 +114,10 @@ Console.WriteLine(secondTry);
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>http://ltcgr.com/community/</guid>
-      <description>
-
-&lt;p&gt;We are very lucky to have such a thriving tech community in West Michigan.&lt;/p&gt;
-
-&lt;h2 id=&#34;get-connected&#34;&gt;Get Connected&lt;/h2&gt;
-
-&lt;h3 id=&#34;slack&#34;&gt;Slack&lt;/h3&gt;
-
-&lt;p&gt;On the Grand Rapids Slack server you will find many tech channels, including one for this group (#learn-to-code). Here you can interact with other living, breathing humans in our area.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://slackin-grandrapids.herokuapp.com/&#34;&gt;Sign up&lt;/a&gt; or &lt;a href=&#34;https://grandrapids.slack.com&#34;&gt;Login&lt;/a&gt; if you already have an account.&lt;/p&gt;
-
-&lt;h3 id=&#34;conga&#34;&gt;Conga&lt;/h3&gt;
-
-&lt;p&gt;Conga provides an aggregated calendar for tech events happening in the area. This list is managed by people so if your favorite meetup is not listed contact the organizer to get it on the calendar.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://conga-wm.org/calendar/&#34;&gt;View the Conga calendar&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;get-involved&#34;&gt;Get Involved&lt;/h2&gt;
-
-&lt;p&gt;[bitcamp]&lt;/p&gt;
-
-&lt;h2 id=&#34;conferences&#34;&gt;Conferences&lt;/h2&gt;
-
-&lt;h3 id=&#34;gr-dev-day-night&#34;&gt;GR Dev Day / Night&lt;/h3&gt;
-
-&lt;h3 id=&#34;glsec&#34;&gt;GLSEC&lt;/h3&gt;
-
-&lt;h3 id=&#34;big-data-ignite&#34;&gt;Big Data Ignite&lt;/h3&gt;
-
-&lt;h3 id=&#34;kalamazoo-x&#34;&gt;Kalamazoo X&lt;/h3&gt;
-
-&lt;h3 id=&#34;barcamp&#34;&gt;BarCamp&lt;/h3&gt;
-
-&lt;h3 id=&#34;grcon&#34;&gt;GrCon&lt;/h3&gt;
-
-&lt;h2 id=&#34;meetups&#34;&gt;Meetups&lt;/h2&gt;
-
-&lt;h3 id=&#34;big-data-and-hadoop-users-group-of-west-michigan-http-www-meetup-com-big-data-and-hadoop-users-group-of-west-michigan&#34;&gt;&lt;a href=&#34;http://www.meetup.com/Big-Data-and-Hadoop-Users-Group-of-West-Michigan/&#34;&gt;Big Data and Hadoop Users Group of West Michigan&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is a call to data scientists, analysts, architects, and developers. Big Data has become more than vaporware. Companies like Cloudera and Hortonworks have been working hard on improving Big Data technologies; they are now enterprise ready. Join us as we embark on a journey to learn about the toolset, use cases, and common implementation scenarios of Hadoop and other technologies.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;devops-west-michigan-http-www-meetup-com-devops-west-michigan&#34;&gt;&lt;a href=&#34;http://www.meetup.com/DevOps-West-Michigan/&#34;&gt;DevOps West Michigan&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;DevOps West Michigan is a MeetUp group for people interested in learning about and sharing DevOps principles and practices.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;embedded-gr-http-www-meetup-com-embedded-gr&#34;&gt;&lt;a href=&#34;http://www.meetup.com/embedded-gr/&#34;&gt;Embedded GR&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Embedded GR is a group of engineers, hobbyists, students, and managers in the Grand Rapids, MI area. We discuss the development, tooling, and processes associated with the creation of embedded systems. Whether you are interested in programming microcontrollers, designing circuits, or managing complex engineering systems, you&amp;rsquo;ll find ways we can learn from one another and share our experiences in this community.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gamedevgr-http-www-meetup-com-gamedevgr&#34;&gt;&lt;a href=&#34;http://www.meetup.com/GamedevGR/&#34;&gt;GameDevGR&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is a group for anyone interested in video game development. All skill levels (gamer, beginner, expert, etc.) and all skill sets (programmer, artist, animator, writer, sound designer, etc.) are welcome. I started this group to meet others who are enthusiastic about making games and want to learn from each other.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;girl-develop-it-grand-rapids-https-www-meetup-com-girl-develop-it-grand-rapids&#34;&gt;&lt;a href=&#34;https://www.meetup.com/Girl-Develop-It-Grand-Rapids/&#34;&gt;Girl Develop It Grand Rapids&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Women Developers and Programmers! Want to learn how to code? Have a great idea? Don&amp;rsquo;t be shy. Develop it.&lt;/p&gt;
-
-&lt;p&gt;It can be intimidating for women to learn and ask questions when they are in an extreme minority. While open and welcoming, today&amp;rsquo;s budding developer community is up to 91% male. There isn&amp;rsquo;t a comfortable place where women can learn at their own pace and not be afraid to ask &amp;ldquo;stupid questions.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;We decided it was time to provide a place where all questions are OK and everyone can learn in a supportive environment.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-cocoaheads-https-www-meetup-com-gr-cocoa-heads&#34;&gt;&lt;a href=&#34;https://www.meetup.com/GR-Cocoa-Heads/&#34;&gt;GR CocoaHeads&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;CocoaHeads is a group devoted to discussion of Apple Computer&amp;rsquo;s Cocoa and CocoaTouch Frameworks for programming on MacOS X and iOS. During monthly meetings, members present on their projects and offer tutorials on various programming topics.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-drupal-users-http-www-meetup-com-grupal&#34;&gt;&lt;a href=&#34;http://www.meetup.com/grupal/&#34;&gt;GR Drupal Users&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Drupal users, site builders, and developers from the Grand Rapids, MI area get together to discuss a wide range of topics related to the content management system.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-functional-programming-http-www-meetup-com-grand-rapids-functional-programming-group&#34;&gt;&lt;a href=&#34;http://www.meetup.com/Grand-Rapids-Functional-Programming-Group/&#34;&gt;GR Functional Programming&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is a group for anyone interested in functional programming, whether it&amp;rsquo;s pure functional languages like Haskell, impure functional languages like Clojure, or languages like Python and Ruby which have the capabilities. All levels of experience and interest are welcome, and hopefully we can foster passion for functional programming in Grand Rapids.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-issa-http-www-gr-issa-org&#34;&gt;&lt;a href=&#34;http://www.gr-issa.org/&#34;&gt;GR ISSA&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;GR-ISSA is a local chapter of the international Information Systems Security Association (or ISSA) based in Grand Rapids, Michigan. GR-ISSA provides local security professionals and practitioners a variety of information security resources ranging from presentations and knowledge sharing to social networking opportunities. This site is dedicated to the Grand Rapids, Michigan chapter of ISSA. GR-ISSA was founded in 2003. For information about the parent international ISSA organization, you are encouraged to visit www.issa.org.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-it-professionals-spicecorps-https-www-meetup-com-grand-rapids-it-professionals-spicecorp&#34;&gt;&lt;a href=&#34;https://www.meetup.com/Grand-Rapids-IT-Professionals-SpiceCorp/&#34;&gt;GR IT Professionals [SpiceCorps]&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Anyone in IT or has passion for computers and technology are welcome! We will meetup monthly to discuss the latest and greatest in Information Technology over beers, vent about our latest projects and needy users, and do prizes where we give away SWAG from SpiceWorks and sponsors!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-java-users-group-http-www-meetup-com-gr-jug&#34;&gt;&lt;a href=&#34;http://www.meetup.com/gr-jug/&#34;&gt;GR Java Users Group&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Join other local Java developers to learn more about Java, the JVM, and related technologies and languages. We encourage you to share what you know by volunteering to present a topic, too!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-powershell-user-group-https-grposh-github-io&#34;&gt;&lt;a href=&#34;https://grposh.github.io/&#34;&gt;GR Powershell User Group&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;We are a local group from Grand Rapids, Michigan, and surrounding areas. We meet monthly to discuss and expand our knowledge of Windows PowerShell.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-python-users-group-http-www-meetup-com-grpython&#34;&gt;&lt;a href=&#34;http://www.meetup.com/grpython/&#34;&gt;GR Python Users Group&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Whether you&amp;rsquo;re a certified Pythonista or just curious about getting started with the Python programming language, join us on the third Monday of each month at The Factory in Grand Rapids, Michigan for our regular meetings. We usually have a presentation or group discussion, and all attendees are welcome to ask questions, suggest topics, or present.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-salesforce-developer-group-http-www-meetup-com-grand-rapids-salesforce-developer-group&#34;&gt;&lt;a href=&#34;http://www.meetup.com/Grand-Rapids-Salesforce-Developer-Group/&#34;&gt;GR Salesforce Developer Group&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Connect with local developers building on the AppCloud! Learn from others and share your knowledge with the group!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-testers-http-www-meetup-com-gr-testers&#34;&gt;&lt;a href=&#34;http://www.meetup.com/GR-Testers/&#34;&gt;GR Testers&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;We&amp;rsquo;re a bunch of software testers. We like to get together over a meal and talk about testing and general geekery. We meet sometime in the 2nd or 3rd week of the month.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;gr-web-development-http-www-meetup-com-grwebdev&#34;&gt;&lt;a href=&#34;http://www.meetup.com/grwebdev/&#34;&gt;GR Web Development&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;We are a group of web developers in the Grand Rapids, MI area. We discuss all parts of developing for the web, from HTML, CSS, and Javascript to design, user experience, usability, accessibility, and tools.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;internet-of-things-west-michigan-http-www-meetup-com-internet-of-things-west-michigan-iotwm&#34;&gt;&lt;a href=&#34;http://www.meetup.com/Internet-of-Things-West-Michigan-IoTWM/&#34;&gt;Internet of Things, West Michigan&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The Internet of Things (IoT) is the next frontier in information technology, enabling automation and intelligence in common objects, like cars, homes and even appliances in our homes. This group is for anyone who is excited about interconnecting devices or leveraging data collected from these devices to gain further knowledge or competitive advantage. This is a call to entrepreneurs, technologists, scientists, engineers, designers, researchers, and students, as well as anyone who is simply curious, to get together and delve into IoT by way of discussion, presentation, and even working together on cool projects! Who knows… we may just change the future!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;ixda-grand-rapids-http-www-meetup-com-ixdagr&#34;&gt;&lt;a href=&#34;http://www.meetup.com/IxDAGR/&#34;&gt;IxDA Grand Rapids&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;IxDA Grand Rapids is a local chapter of the IxDA—the global professional network. We provide opportunities &amp;amp; platforms to gather &amp;amp; advance the discipline of interaction design.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;ladies-that-ux-grand-rapids-http-www-meetup-com-ladies-that-ux-grand-rapids&#34;&gt;&lt;a href=&#34;http://www.meetup.com/Ladies-That-UX-Grand-Rapids/&#34;&gt;Ladies that UX Grand Rapids&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Who are the Ladies that UX, you ask? We are a collaborative community of UX designers, technical, and creative professionals from the Grand Rapids area looking to inform West Michigan (and the world!) of the impact of ladies working in our industry. Through UX and design-focused events and meet-ups we encourage our members to engage in meaningful conversations, network with other local professionals, and develop new insights into UX processes and practices.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;learn-to-code-grand-rapids-https-www-meetup-com-learn-to-code-grand-rapids&#34;&gt;&lt;a href=&#34;https://www.meetup.com/Learn-To-Code-Grand-Rapids/&#34;&gt;Learn to Code Grand Rapids&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;This is our group. Come join us at our next meetup!.&lt;/p&gt;
-
-&lt;h3 id=&#34;software-gr-and-glsec-https-www-meetup-com-software-gr-and-glsec&#34;&gt;&lt;a href=&#34;https://www.meetup.com/Software-GR-and-GLSEC/&#34;&gt;Software GR and GLSEC&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Founded by Atomic Object in the fall of 2003, SoftwareGR is a 501c6 non-profit trade association dedicated to improving the competitiveness of Michigan’s software development community. We are interested in all aspects of software, from design and development, to testing and user experience.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;the-west-michigan-cisco-user-group-http-www-wmcug-org&#34;&gt;&lt;a href=&#34;http://www.wmcug.org/&#34;&gt;The West Michigan Cisco User Group&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The West Michigan Cisco User Group (WMCUG) is a non-profit, independent users group which is dedicated to the open exchange of information in the fields of internetworking and the advanced technologies that support the business goals of an organization. WMCUG focus will primarily, but not exclusively be devoted to Cisco products and solutions. Within this framework, we build a community to share best practices and provide a forum for members to grow as individual contributors in the technology arena.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;west-michigan-cloud-computing-http-www-meetup-com-west-michigan-cloud-computing&#34;&gt;&lt;a href=&#34;http://www.meetup.com/West-Michigan-Cloud-Computing/&#34;&gt;West Michigan Cloud Computing&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The West Michigan Cloud Computing (WMCC) group is an informal gathering of individuals with a focus on discussing cloud computing from various perspectives. We welcome people from all domains and experience levels to come and share their knowledge and best practices, drive innovation by exchanging ideas and network in the community.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;west-michigan-content-strategy-meetup-http-www-meetup-com-content-strategy-west-michigan&#34;&gt;&lt;a href=&#34;http://www.meetup.com/Content-Strategy-West-Michigan/&#34;&gt;West Michigan Content Strategy Meetup&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;There are hundreds of Content Experts in West Michigan. At times, the many options for networking ends up reinforcing the silos we are constrained by in our professional settings. In an effort to disrupt the status quo, we are creating a generalist group for anyone to talk about the challenges, successes, and learned lessons we all experience with our clients, peers, and competitors as we create, deliver, manage, govern, distribute, and preserve content. Presenters could be our peers as well as guest thought leaders sharing their expertise.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;west-michigan-linux-users-group-http-www-wmlug-org&#34;&gt;&lt;a href=&#34;http://www.wmlug.org/&#34;&gt;West Michigan Linux Users&amp;rsquo; Group&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;WMLUG&amp;rsquo;s goal is to provide a friendly atmosphere to learn about using Linux and open-source software for the home and enterprise user.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;west-michigan-network-technology-users-group-http-www-wmntug-org&#34;&gt;&lt;a href=&#34;http://www.wmntug.org/&#34;&gt;West Michigan Network Technology Users Group&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The West Michigan Network Technology Users Group, or WMNTUG is an organization comprised of computer professionals dedicated to advancing awareness and education in the use of &amp;ldquo;Network Technology&amp;rdquo; and related applications.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;west-michigan-r-users-group-https-www-meetup-com-west-michigan-r-users-group&#34;&gt;&lt;a href=&#34;https://www.meetup.com/West-Michigan-R-Users-Group/&#34;&gt;West Michigan R Users Group&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This is a place for anyone interested in the open source statistical software R and its associated tools and variations such as RStudio, ShinyR, Revolutions R Open, SparkR and others. R is one of the fastest growing tools in the data scientist&amp;rsquo;s toolbox providing visualization and statistical analysis capability. We will discuss R programming, statistical techniques using R, finding help with R, R packages (add-ons) and more.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;west-michigan-ruby-users-group-http-www-meetup-com-mi-ruby&#34;&gt;&lt;a href=&#34;http://www.meetup.com/mi-ruby/&#34;&gt;West Michigan Ruby Users Group&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Meet other local Ruby programmers.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&#34;wordpress-grand-rapids-http-www-meetup-com-wpgrandrapids&#34;&gt;&lt;a href=&#34;http://www.meetup.com/wpgrandrapids/&#34;&gt;WordPress Grand Rapids&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;A group for anyone interested in WordPress, whether it&amp;rsquo;s blogging with WordPress, developing with/for WordPress, or running a business based around WordPress.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>We are very lucky to have such a thriving tech community in West Michigan.
+Get Connected Slack On the Grand Rapids Slack server you will find many tech channels, including one for this group (#learn-to-code). Here you can interact with other living, breathing humans in our area.
+Sign up or Login if you already have an account.
+Conga Conga provides an aggregated calendar for tech events happening in the area.</description>
     </item>
     
   </channel>
