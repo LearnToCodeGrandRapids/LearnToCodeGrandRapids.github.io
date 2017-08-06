@@ -1,9 +1,9 @@
 +++
-date = "2017-04-21T00:00:00-04:00"
+date = "2017-07-13T00:00:00-04:00"
 draft = false
 title = "Unit Testing Basics with xUnit and VS 2017 - Part 3 - Notes"
 tags = ["c#"]
-categories = [ "Languages" ]
+categories = [ "Languages", "Testing" ]
 featureimage = ""
 menu = ""
 +++
