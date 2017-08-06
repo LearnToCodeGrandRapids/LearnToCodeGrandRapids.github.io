@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ltcgr.com/blog/2017/04/unit-testing-basics/</loc>
-    <lastmod>2017-04-21T00:00:00-04:00</lastmod>
+    <loc>http://ltcgr.com/blog/2017/07/unit-testing-basics-part3/</loc>
+    <lastmod>2017-07-13T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ltcgr.com/blog/2017/07/unit-testing-basics-part3/</loc>
+    <loc>http://ltcgr.com/blog/2017/04/unit-testing-basics/</loc>
     <lastmod>2017-04-21T00:00:00-04:00</lastmod>
   </url>
   
@@ -58,13 +58,13 @@
   
   <url>
     <loc>http://ltcgr.com/blog/</loc>
-    <lastmod>2017-04-21T00:00:00-04:00</lastmod>
+    <lastmod>2017-07-13T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://ltcgr.com/tags/c#/</loc>
-    <lastmod>2017-04-21T00:00:00-04:00</lastmod>
+    <lastmod>2017-07-13T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,19 +81,25 @@
   
   <url>
     <loc>http://ltcgr.com/categories/languages/</loc>
-    <lastmod>2017-04-21T00:00:00-04:00</lastmod>
+    <lastmod>2017-07-13T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://ltcgr.com/</loc>
-    <lastmod>2017-04-21T00:00:00-04:00</lastmod>
+    <lastmod>2017-07-13T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://ltcgr.com/tags/</loc>
-    <lastmod>2017-04-21T00:00:00-04:00</lastmod>
+    <lastmod>2017-07-13T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://ltcgr.com/categories/testing/</loc>
+    <lastmod>2017-07-13T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
