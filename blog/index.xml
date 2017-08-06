@@ -18,7 +18,19 @@
       
       <guid>http://ltcgr.com/blog/2017/04/unit-testing-basics/</guid>
       <description>In this month&amp;rsquo;s meetup we started working through the string calculator kata. We completed the first few steps, and finished after completing &amp;ldquo;support different delimiters.&amp;rdquo;
-You can download the solution from our github repo string-calculator-part1. Just follow the link, click on &amp;ldquo;clone or download,&amp;rdquo; and then click &amp;ldquo;download zip.&amp;rdquo;</description>
+You can download the solution from our github repo string-calculator-part1. Just follow the link, click on &amp;ldquo;clone or download,&amp;rdquo; and then click &amp;ldquo;download zip.&amp;rdquo;
+Update 2017-05-11 We finished the exercises in string calculator this month. You can download the completed repo string-calculator-part2 if you would like to compare your work with the results of the workshop.</description>
+    </item>
+    
+    <item>
+      <title>Unit Testing Basics with xUnit and VS 2017 - Part 3 - Notes</title>
+      <link>http://ltcgr.com/blog/2017/07/unit-testing-basics-part3/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://ltcgr.com/blog/2017/07/unit-testing-basics-part3/</guid>
+      <description>In this month&amp;rsquo;s meetup we started working through the second string calculator kata. We completed each of the exercises.
+You can download the solution from our github repo string-calculator-part3. Just follow the link, click on &amp;ldquo;clone or download,&amp;rdquo; and then click &amp;ldquo;download zip.&amp;rdquo;
+Additional Resources We talked a little bit about the concept of dependency injection, and inversion of control in this workshop. Our preferred IoC container is Autofac.</description>
     </item>
     
     <item>
