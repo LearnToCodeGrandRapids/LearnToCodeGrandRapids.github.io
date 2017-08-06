@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Design on Learn to Code Grand Rapids</title>
+    <link>http://ltcgr.com/categories/software-design/</link>
+    <description>Recent content in Software Design on Learn to Code Grand Rapids</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="http://ltcgr.com/categories/software-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Real World Application Developer - Part 1</title>
+      <link>http://ltcgr.com/blog/2017/08/max-column-sum-by-key-notes/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://ltcgr.com/blog/2017/08/max-column-sum-by-key-notes/</guid>
+      <description>&lt;p&gt;Here is the problem statement used for the first segment of the &lt;em&gt;max column sum by key&lt;/em&gt; workshop.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

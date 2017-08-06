@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   
-  <title>Unit Testing Basics with xUnit and VS 2017 - Part 3 - Notes &middot; Learn to Code Grand Rapids</title>
+  <title>Real World Application Developer - Part 1 &middot; Learn to Code Grand Rapids</title>
   
 
   
@@ -124,20 +124,29 @@
 
   <div class="content container">
     <div class="post">
-      <h1>Unit Testing Basics with xUnit and VS 2017 - Part 3 - Notes</h1>
-      <span class="post-date">Thu, Jul 13, 2017</span>
-      
+      <h1>Real World Application Developer - Part 1</h1>
+      <span class="post-date">Tue, Aug 1, 2017</span>
+      <p>Here is the problem statement used for the first segment of the <em>max column sum by key</em> workshop.</p>
 
-<p>In this month&rsquo;s meetup we started working through the second <a href="http://osherove.com/tdd-kata-2/">string calculator</a> kata. We completed each of the exercises.</p>
+<p></p>
 
-<p>You can download the solution from our github repo <a href="https://github.com/LearnToCodeGrandRapids/string-calculator-part3">string-calculator-part3</a>. Just follow the link, click on &ldquo;clone or download,&rdquo; and then click &ldquo;download zip.&rdquo;</p>
+<p>Write a library that can read a file separated by a delimiter (i.e., comma, tab, etc.).</p>
+
+<p>Write a library that can read in a tab separated data file, generate a summation of the values for each key, and return the key and sum for the key with the greatest sum. The exposed method to perform the operation will take the file path, position of the key, and position of the value as parameters.</p>
+
+<p>For testing we will be using a file of <a href="https://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-1gram-20120701-0.gz">n-grams</a> from the Google Books dataset. Once uncompressed the file will contain over 10 million records.</p>
+
+<p>For the given arguments, <code>ngrams.tsv</code>, 1, 2 we would expect the following response:</p>
+
+<pre><code>{
+    Key: 2006,
+    Sum: 22569013
+}
+</code></pre>
 
 <h2 id="additional-resources">Additional Resources</h2>
 
-<p>We talked a little bit about the concept of dependency injection, and inversion of control in this workshop. Our preferred IoC container is <a href="https://autofac.org/">Autofac</a>.</p>
-
-<p>In the context of testing we discuss mocks, and built our own. We illuded to tools that make this process even easier. Our favorite mocking framework is <a href="http://nsubstitute.github.io/">NSubstitute</a>. When using a mocking framework along side an IoC container is it helpful to use a library that will handle resolving your dependencies. We like to use <a href="https://github.com/MRCollective/AutofacContrib.NSubstitute">AutoSubstitute</a> when working with Autofac and NSubstitute.</p>
-
+<p>If you would like to learn more about n-grams there is a <a href="https://en.wikipedia.org/wiki/N-gram">pretty good write up on Wikipedia</a>.</p>
     </div>
 
 			
