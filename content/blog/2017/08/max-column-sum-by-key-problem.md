@@ -265,4 +265,66 @@ Our test still fails, but we're now ready to start building the process file log
 # Let's load the real test file
 
 * Add the n-gram file as set2.tsv in your test project
+* Refactor our the ProceFile test we wrote earlier into a Theory so we can test with both datasets
+
+```cs
+        [Theory]
+        [InlineData("set1", 1, 2, 5000, 21)]
+        public void ProcessFile_ReturnsExpected_GivenInputs(
+            string set, int keyPosition, int valuePosition, int expectedKey, int expectedTotal)
+        {
+            var autoSubstitute = new AutoSubstitute();
+
+            var setBytes = (set == "set2") ? Resources.set2 : Resources.set1;
+
+            autoSubstitute
+                .Resolve<IFile>()
+                .OpenText(string.Empty)
+                .Returns(new StreamReader(new MemoryStream(setBytes)));
+
+            var actual = autoSubstitute
+                .Resolve<Processor>()
+                .ProcessFile(string.Empty, keyPosition, valuePosition);
+            
+            Assert.Equal(expectedKey, actual.Key);
+            Assert.Equal(expectedTotal, actual.Value);
+        }
+```
+
+* Now we can write another profiling test for set2
+
+```cs
+ [Fact]
+        public void ProcessFile_ReturnsInLessThan30Sec_Given1and2forSet2()
+        {
+            var timer = new Stopwatch();
+            timer.Start();
+
+            ProcessFile_ReturnsExpected_GivenInputs("set2", 1, 2, 2006, 22569013);
+
+            timer.Stop();
+
+            Console.WriteLine(timer.ElapsedMilliseconds);
+
+            Assert.True(timer.ElapsedMilliseconds < 30000);
+        }
+```
+
+* You may need to tweak this test depending on the performance of the machine you are running on
+
+# Profiling
+
+At this point, the library satisfies our initial problem. However, it is pretty slow. Let's do a little investigative work and see if we can figure out why.
+
+* Install dotTrace
+* https://www.jetbrains.com/help/profiler/Get_Started_with_Performance_Viewer.html
+* ReSharper | Profile | Profile Startup Configuration Performance Profiling....
+* Select Sampling for a .net process
+* Run the unit test
+* View the results
+* Looks like CsvHelper is out bottleneck
+
+# PART 2
+
+* https://stackoverflow.com/questions/2161895/reading-large-text-files-with-streams-in-c-sharp
 
