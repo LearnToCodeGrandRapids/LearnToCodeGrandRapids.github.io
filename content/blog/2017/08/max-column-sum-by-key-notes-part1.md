@@ -30,11 +30,11 @@ The solution created above gets us started with an Ltcgr.MaxColumnSumByKey proje
 * Create a simple placeholder test
 
 ```cs
-        [Fact]
-        public void ProcessFile_Returns5000and21_Given1and2forSet1()
-        {
-            Assert.True(true);
-        }
+[Fact]
+public void ProcessFile_Returns5000and21_Given1and2forSet1()
+{
+    Assert.True(true);
+}
 ```
 
 * Run the test to make sure your test runner is functioning correctly (you may need to install `xunit.runner.visualstudio` to run tests from Visual Studio).
@@ -51,11 +51,11 @@ We need to create model to represent the records that we are extracting from the
     * Add the read only property Value (int)
 
 ```cs
-    public class Record
-    {
-        public int Key { get; set; }
-        public int Value { get; set; }
-    }
+public class Record
+{
+    public int Key { get; set; }
+    public int Value { get; set; }
+}
 ```
 
 ## Stubbing out the Processor
@@ -66,26 +66,26 @@ The next step is to define the method signature for our entry method that will b
 * Create a method to process files 
 
 ```cs
-        public Record ProcessFile(string filePath, int keyPosition, int valuePosition)
-        {
-            return null;
-        }
+public Record ProcessFile(string filePath, int keyPosition, int valuePosition)
+{
+    return null;
+}
 ```
 
 * Extract the method into an interface IProcessor
 * Add documentation
 
 ```cs
-        /// <summary>
-        /// Processes the given file by grouping the values associated
-        /// with each key, summing them, and then returning the key
-        /// and total for the key with the greatest total.
-        /// </summary>
-        /// <param name="filePath">Absolute path to the tab separated file containing the records</param>
-        /// <param name="keyPosition">The column of the key in the record (first pos is 0)</param>
-        /// <param name="valuePosition">The column of the value corresponding to the key in the record (first pos is 0)</param>
-        /// <returns>A record representing the key with the height sum value</returns>
-        Record ProcessFile(string filePath, int keyPosition, int valuePosition);
+/// <summary>
+/// Processes the given file by grouping the values associated
+/// with each key, summing them, and then returning the key
+/// and total for the key with the greatest total.
+/// </summary>
+/// <param name="filePath">Absolute path to the tab separated file containing the records</param>
+/// <param name="keyPosition">The column of the key in the record (first pos is 0)</param>
+/// <param name="valuePosition">The column of the value corresponding to the key in the record (first pos is 0)</param>
+/// <returns>A record representing the key with the height sum value</returns>
+Record ProcessFile(string filePath, int keyPosition, int valuePosition);
 ```
 
 Note that we are only placing the documentation on the interface. It is possible to put the documentation on the concrete class, but it does not add value to the library. The intent is for implementors to be using the interface, which intellisense will pull documentation from. The lack of documentation on the concrete class is a gentle reminder to implementors to use the interface instead.
@@ -108,22 +108,22 @@ There is an excellent utility for reading delimiter separated value files called
 * Create a wrapper method for `OpenText`
 
 ```cs
-        public StreamReader OpenText(string path)
-        {
-            return System.IO.File.OpenText(path);
-        }
+public StreamReader OpenText(string path)
+{
+    return System.IO.File.OpenText(path);
+}
 ```
 
 * Extract `OpenText` into an `IFile` interface
 
 ```cs
-        /// <summary>
-        /// Opens an existing UTF-8 encoded text file for reading (this
-        /// method wraps System.IO.File.OpenText).
-        /// </summary>
-        /// <param name="path">The file to be opened for reading.</param>
-        /// <returns>A StreamReader on the specified path.</returns>
-        StreamReader OpenText(string path);
+/// <summary>
+/// Opens an existing UTF-8 encoded text file for reading (this
+/// method wraps System.IO.File.OpenText).
+/// </summary>
+/// <param name="path">The file to be opened for reading.</param>
+/// <returns>A StreamReader on the specified path.</returns>
+StreamReader OpenText(string path);
 ```
 
 # Add a dependency on `IFile` to `Processor`
@@ -133,10 +133,10 @@ There is an excellent utility for reading delimiter separated value files called
 * Add a constructor the takes an IFile instance as a parameter
 
 ```cs
-        public Processor(IFile file)
-        {
-            File = file;
-        }
+public Processor(IFile file)
+{
+    File = file;
+}
 ```
 
 # Updating our test to inject IFile
@@ -147,27 +147,29 @@ There is an excellent utility for reading delimiter separated value files called
 * Update the test to substitute an IFile that returns a stream based on set1
 
 ```cs
-        public void ProcessFile_Returns5000and21_Given1and2forSet1()
-        {
-            const int expectedKey = 5000;
-            const int expectedTotal = 21;
+public void ProcessFile_Returns5000and21_Given1and2forSet1()
+{
+    const int expectedKey = 5000;
+    const int expectedTotal = 21;
 
-            var autoSubstitute = new AutoSubstitute();
+    var autoSubstitute = new AutoSubstitute();
 
-            autoSubstitute
-                .Resolve<IFile>()
-                .OpenText(string.Empty)
-                .Returns(new StreamReader(new MemoryStream(Resources.set1)));
+    autoSubstitute
+        .Resolve<IFile>()
+        .OpenText(string.Empty)
+        .Returns(new StreamReader(new MemoryStream(Resources.set1)));
 
-            var (actualKey, actualTotal) = autoSubstitute
-                .Resolve<Processor>()
-                .ProcessFile(string.Empty, 1, 2);
-            
-            Assert.Equal(expectedKey, actualKey);
-            Assert.Equal(expectedTotal, actualTotal);
-        }
+    var (actualKey, actualTotal) = autoSubstitute
+        .Resolve<Processor>()
+        .ProcessFile(string.Empty, 1, 2);
+    
+    Assert.Equal(expectedKey, actualKey);
+    Assert.Equal(expectedTotal, actualTotal);
+}
 ```
 
 Our test still fails, but we're now ready to start building the process file logic.
 
 In next month's workshop we will begin implementing the logic for our processor.
+
+You can download the solution from the first workshop from the repository on github: [max-column-sum-by-key-part1](https://github.com/LearnToCodeGrandRapids/max-column-sum-by-key-part1).
