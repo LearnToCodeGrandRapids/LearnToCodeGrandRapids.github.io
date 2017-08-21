@@ -1,7 +1,7 @@
 +++
 date = "2017-08-10T00:00:00-04:00"
 draft = true 
-title = "Real World Application Developer - Part 1 - Notes"
+title = "Real World Application Development - Part 2 - Notes"
 tags = ["c#"]
 categories = [ "Languages", "Software Design" ]
 featureimage = ""
