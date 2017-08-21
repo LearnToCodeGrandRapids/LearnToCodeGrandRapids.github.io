@@ -151,11 +151,11 @@
 <li>Create a simple placeholder test</li>
 </ul>
 
-<pre><code class="language-cs">        [Fact]
-        public void ProcessFile_Returns5000and21_Given1and2forSet1()
-        {
-            Assert.True(true);
-        }
+<pre><code class="language-cs">[Fact]
+public void ProcessFile_Returns5000and21_Given1and2forSet1()
+{
+    Assert.True(true);
+}
 </code></pre>
 
 <ul>
@@ -178,11 +178,11 @@
 </ul></li>
 </ul>
 
-<pre><code class="language-cs">    public class Record
-    {
-        public int Key { get; set; }
-        public int Value { get; set; }
-    }
+<pre><code class="language-cs">public class Record
+{
+    public int Key { get; set; }
+    public int Value { get; set; }
+}
 </code></pre>
 
 <h2 id="stubbing-out-the-processor">Stubbing out the Processor</h2>
@@ -194,10 +194,10 @@
 <li>Create a method to process files</li>
 </ul>
 
-<pre><code class="language-cs">        public Record ProcessFile(string filePath, int keyPosition, int valuePosition)
-        {
-            return null;
-        }
+<pre><code class="language-cs">public Record ProcessFile(string filePath, int keyPosition, int valuePosition)
+{
+    return null;
+}
 </code></pre>
 
 <ul>
@@ -205,16 +205,16 @@
 <li>Add documentation</li>
 </ul>
 
-<pre><code class="language-cs">        /// &lt;summary&gt;
-        /// Processes the given file by grouping the values associated
-        /// with each key, summing them, and then returning the key
-        /// and total for the key with the greatest total.
-        /// &lt;/summary&gt;
-        /// &lt;param name=&quot;filePath&quot;&gt;Absolute path to the tab separated file containing the records&lt;/param&gt;
-        /// &lt;param name=&quot;keyPosition&quot;&gt;The column of the key in the record (first pos is 0)&lt;/param&gt;
-        /// &lt;param name=&quot;valuePosition&quot;&gt;The column of the value corresponding to the key in the record (first pos is 0)&lt;/param&gt;
-        /// &lt;returns&gt;A record representing the key with the height sum value&lt;/returns&gt;
-        Record ProcessFile(string filePath, int keyPosition, int valuePosition);
+<pre><code class="language-cs">/// &lt;summary&gt;
+/// Processes the given file by grouping the values associated
+/// with each key, summing them, and then returning the key
+/// and total for the key with the greatest total.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;filePath&quot;&gt;Absolute path to the tab separated file containing the records&lt;/param&gt;
+/// &lt;param name=&quot;keyPosition&quot;&gt;The column of the key in the record (first pos is 0)&lt;/param&gt;
+/// &lt;param name=&quot;valuePosition&quot;&gt;The column of the value corresponding to the key in the record (first pos is 0)&lt;/param&gt;
+/// &lt;returns&gt;A record representing the key with the height sum value&lt;/returns&gt;
+Record ProcessFile(string filePath, int keyPosition, int valuePosition);
 </code></pre>
 
 <p>Note that we are only placing the documentation on the interface. It is possible to put the documentation on the concrete class, but it does not add value to the library. The intent is for implementors to be using the interface, which intellisense will pull documentation from. The lack of documentation on the concrete class is a gentle reminder to implementors to use the interface instead.</p>
@@ -240,23 +240,23 @@
 <li>Create a wrapper method for <code>OpenText</code></li>
 </ul>
 
-<pre><code class="language-cs">        public StreamReader OpenText(string path)
-        {
-            return System.IO.File.OpenText(path);
-        }
+<pre><code class="language-cs">public StreamReader OpenText(string path)
+{
+    return System.IO.File.OpenText(path);
+}
 </code></pre>
 
 <ul>
 <li>Extract <code>OpenText</code> into an <code>IFile</code> interface</li>
 </ul>
 
-<pre><code class="language-cs">        /// &lt;summary&gt;
-        /// Opens an existing UTF-8 encoded text file for reading (this
-        /// method wraps System.IO.File.OpenText).
-        /// &lt;/summary&gt;
-        /// &lt;param name=&quot;path&quot;&gt;The file to be opened for reading.&lt;/param&gt;
-        /// &lt;returns&gt;A StreamReader on the specified path.&lt;/returns&gt;
-        StreamReader OpenText(string path);
+<pre><code class="language-cs">/// &lt;summary&gt;
+/// Opens an existing UTF-8 encoded text file for reading (this
+/// method wraps System.IO.File.OpenText).
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;path&quot;&gt;The file to be opened for reading.&lt;/param&gt;
+/// &lt;returns&gt;A StreamReader on the specified path.&lt;/returns&gt;
+StreamReader OpenText(string path);
 </code></pre>
 
 <h1 id="add-a-dependency-on-ifile-to-processor">Add a dependency on <code>IFile</code> to <code>Processor</code></h1>
@@ -267,10 +267,10 @@
 <li>Add a constructor the takes an IFile instance as a parameter</li>
 </ul>
 
-<pre><code class="language-cs">        public Processor(IFile file)
-        {
-            File = file;
-        }
+<pre><code class="language-cs">public Processor(IFile file)
+{
+    File = file;
+}
 </code></pre>
 
 <h1 id="updating-our-test-to-inject-ifile">Updating our test to inject IFile</h1>
@@ -282,30 +282,32 @@
 <li>Update the test to substitute an IFile that returns a stream based on set1</li>
 </ul>
 
-<pre><code class="language-cs">        public void ProcessFile_Returns5000and21_Given1and2forSet1()
-        {
-            const int expectedKey = 5000;
-            const int expectedTotal = 21;
+<pre><code class="language-cs">public void ProcessFile_Returns5000and21_Given1and2forSet1()
+{
+    const int expectedKey = 5000;
+    const int expectedTotal = 21;
 
-            var autoSubstitute = new AutoSubstitute();
+    var autoSubstitute = new AutoSubstitute();
 
-            autoSubstitute
-                .Resolve&lt;IFile&gt;()
-                .OpenText(string.Empty)
-                .Returns(new StreamReader(new MemoryStream(Resources.set1)));
+    autoSubstitute
+        .Resolve&lt;IFile&gt;()
+        .OpenText(string.Empty)
+        .Returns(new StreamReader(new MemoryStream(Resources.set1)));
 
-            var (actualKey, actualTotal) = autoSubstitute
-                .Resolve&lt;Processor&gt;()
-                .ProcessFile(string.Empty, 1, 2);
-            
-            Assert.Equal(expectedKey, actualKey);
-            Assert.Equal(expectedTotal, actualTotal);
-        }
+    var (actualKey, actualTotal) = autoSubstitute
+        .Resolve&lt;Processor&gt;()
+        .ProcessFile(string.Empty, 1, 2);
+    
+    Assert.Equal(expectedKey, actualKey);
+    Assert.Equal(expectedTotal, actualTotal);
+}
 </code></pre>
 
 <p>Our test still fails, but we&rsquo;re now ready to start building the process file logic.</p>
 
 <p>In next month&rsquo;s workshop we will begin implementing the logic for our processor.</p>
+
+<p>You can download the solution from the first workshop from the repository on github: <a href="https://github.com/LearnToCodeGrandRapids/max-column-sum-by-key-part1">max-column-sum-by-key-part1</a>.</p>
     </div>
 
 			
