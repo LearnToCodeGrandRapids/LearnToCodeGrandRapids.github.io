@@ -24,6 +24,9 @@ before_script:
 
 script:
     - git clone https://github.com/spf13/hyde.git ./themes/hyde
+    - cd ./themes/hyde
+    - git checkout 50fec3e32df7b3ef311377db55093fc87bccb446
+    - cd ../../
     - ./hugo
 
 after_success:
