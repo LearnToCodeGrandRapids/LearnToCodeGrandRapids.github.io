@@ -16,7 +16,7 @@ The first thing you want to do is read Microsoft's [install Visual Studio 2017](
 
 In the following sections I will detail the selections installed on the PC I used for guiding workshops. Your needs may vary, but this should at least give you a starting point.
 
-== Workloads
+## Workloads
 
 * Windows
     * .NET desktop development
@@ -25,7 +25,7 @@ In the following sections I will detail the selections installed on the PC I use
 * Other Toolsets
     * .NET Core cross-platform development
 
-== Individual components
+## Individual components
 
 * .NET
     * .NET Core runtime
@@ -76,7 +76,7 @@ In the following sections I will detail the selections installed on the PC I use
     * Entity Framework 6 tools
     * TypeScript 2.1 SDK
 
-== Language packs
+## Language packs
 
 * English
 
