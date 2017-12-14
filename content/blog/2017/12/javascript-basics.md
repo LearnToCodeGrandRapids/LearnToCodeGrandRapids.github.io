@@ -135,6 +135,18 @@ There are more operators, but these should cover most cases you will run across.
 
 Mixing data types can yield all kinds of fun and interesting results...unless you're trying to debug them. JavaScript is a dynamic language, which allows you to intermix values of different types. The interpretter will do its best to infer your intent when data types mix. For example, if you do something like `"10" + 5` you may think the result would be `15`, but since `"10"` is a string the interpretter will think you want to do string concatenation and convert `5` to `"5"` automatically. We call this type coersion. 
 
+### Conditionals
+
+https://introcs.cs.princeton.edu/java/13flow/Flip.java.html
+
+### Loops
+
+https://introcs.cs.princeton.edu/java/13flow/PowersOfTwo.java.html
+
+### Functions
+
+https://introcs.cs.princeton.edu/java/21function/FunctionExamples.java.html
+
 
 ===============
         
