@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.20.7" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  
+  <title> &middot; Learn to Code Grand Rapids</title>
+  
+
+  
+  <link rel="stylesheet" href="http://ltcgr.com/css/poole.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/syntax.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/hyde.css">
+  <link rel="stylesheet" href="http://ltcgr.com/css/site.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="Learn to Code Grand Rapids" />
+
+  <!-- Font Awesome -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body class="theme-ltcgr ">
+  <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://ltcgr.com/">
+        <img class="logo" src="http://ltcgr.com//img/logo.png" alt="Learn to Code Grand Rapids"/>
+      </a>
+      
+      <p class="lead">
+       Developing, together. 
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      
+        <li><a href="/about/"> About </a></li>
+      
+        <li><a href="/community/"> Community </a></li>
+      
+        <li><a href="/resources/"> Resources </a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav-icons">
+      
+
+<li>
+    <a href="http://ltcgr.com/index.xml" title="Subcribe">
+        <i class="fa fa-fw fa-rss"></i>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://github.com/learntocodegrandrapids" title="GitHub">
+        <i class="fa fa-fw fa-github"></i>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://www.meetup.com/Learn-To-Code-Grand-Rapids/" title="">
+        <img src="http://ltcgr.com/img/meetup.svg" alt="" />
+    </a>
+</li>
+
+    </ul>
+
+    <p>&copy; 2017. All rights reserved. </p>
+  </div>
+</div>
+
+
+  <div class="content container">
+    <div class="post">
+      <h1></h1>
+      <span class="post-date">Mon, Jan 1, 0001</span>
+      
+
+<h1 id="javascript-basics">JavaScript Basics</h1>
+
+<p>This workshop is heavily influenced by &ldquo;<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JavaScript Basics - Learn Web Development</a>&rdquo; by MDN.</p>
+
+<p>JavaScript is one of the most widely used programming languages today. If you&rsquo;ve viewed a webpage there is a good chance it used JavaScript. The objective of this workshop is to take you through the steps necessary to setup a basic sandbox to experiment with JavaScript, and to learn just enough JavaScript to be dangerous.</p>
+
+<h2 id="setting-up-the-sandbox">Setting up the Sandbox</h2>
+
+<p>The first thing that we are going to do is setup a basic sandbox that you can use to experiment with JavaScript. To do this we are going to setup a couple of files. This process is pretty straight simple since all you need to do is download the package from github:</p>
+
+<p><a href="https://github.com/LearnToCodeGrandRapids/javascript-sandbox">https://github.com/LearnToCodeGrandRapids/javascript-sandbox</a></p>
+
+<p>Let&rsquo;s take a look at the files in this repository:</p>
+
+<p><code>sandbox.html</code> this is the html file that you will load in the browser. If you look at the source you will notice that most of the content is filler the important piece is:</p>
+
+<pre><code class="language-js">&lt;script type=&quot;text/javascript&quot; src=&quot;sandbox.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<p>This statement is what load our <code>sandbox.js</code> file, this is where we will be writing our JavaScript throughout the workshop. You may have also noticed that <code>sandbox.js</code> is the last thing loaded in the body. The reason for this is that when the JavaScript is loaded it can only affect elements that existed prior to its execution, so if we had elements after it, it would not be able to interact with them right away.</p>
+
+<p>Once you are familiar with the files in the sandbox, open <code>sandbox.html</code> in your browser (if its Chrome that will help you follow along later).</p>
+
+<h2 id="hello-world">Hello World!</h2>
+
+<p>The first thing we are going to do is some basic DOM manipulation. DOM stands for document object model. It descriptions the logic structure of the website within the browser. In this example we will be interacting with the DOM to change the title displayed on the page. This can be accomplished by writing the following code in your <code>sandbox.js</code> file:</p>
+
+<pre><code class="language-js">var myHeading = document.querySelector('h1');
+myHeading.textContent = 'Hello world!';
+</code></pre>
+
+<p>After making this change you should be able to refresh your browser and see the title of the page change.</p>
+
+<h3 id="how-does-this-work">How does this work?</h3>
+
+<p>On the first line we are grabbing the DOM element that contains the title using the <code>querySelector</code> method on the <code>document</code> object. You can think of <code>document</code> as the root of the DOM. Once the title header element has been retreived we store it in a variable named <code>myHeading</code>. We will talk more about variables later. The important part here is understanding that for us to interact with an element in the DOM we first must select it. The <code>querySelector</code> method takes an argument that is similiar to a css selector.</p>
+
+<p>Once we have the title in the variable <code>myHeading</code> we assign the value <code>Hello world!</code> to the <code>textContent</code> field. <code>textContent</code> is the content held within the element in plain text.</p>
+
+<h3 id="what-s-next">What&rsquo;s next?</h3>
+
+<p>At this point we&rsquo;ve master JavaScript. Go out and write the next Facebook. What&rsquo;s a variable you ask? Perhaps we should go over a few things.</p>
+
+<h2 id="javascript-basics-1">JavaScript Basics</h2>
+
+<p>As you work in the face paced world of front end development you will spend most of your time interacting with frameworks, but it is still useful to understand the fundamentals of JavaScript.</p>
+
+<h3 id="comments">Comments</h3>
+
+<p>Comment provide you with a way to add commentary within your code that explains why things are the way they are without affecting the actual execution of the code. There are two ways to defined comments in JavaScript:</p>
+
+<p>First, you defined a multiline comment in a way similiar to CSS:</p>
+
+<pre><code class="language-js">/*
+    This is a comment in JavaScript
+    it can contain multiple lines.
+ */
+</code></pre>
+
+<p>Second, you can do inline, single line comments:</p>
+
+<pre><code class="language-js">// just use double slashes and then all trailing text will become a comment
+</code></pre>
+
+<p>It may be tempting to use comments to describe what your code is doing when you first start out. If this is helpful you can do it while developing, just make sure to remove those comments before you give your code to anyone else. Comments are there to explain the <em>why</em> not the <em>what</em> of your code.</p>
+
+<h3 id="variables">Variables</h3>
+
+<p>You can think of a variable as a bucket that holds a value. This isn&rsquo;t technically accurate from a computer science perspective, but when you&rsquo;re just getting started its conceptually accurate. Why do we need variables? In order to do anything interesting you need a way to preserve, and build state over time. Variables give us a way to do this.</p>
+
+<p>You create a variable using the <code>var</code> keyword. You can name a variable almost anything you want, for example:</p>
+
+<pre><code class="language-js">var myAwesomeVariable;
+</code></pre>
+
+<p>There are a few things you will want to make note of here. The first is that the name of our variable does not contain spaces, and the capitalization varies. We call this camel case, because the capitals at the beginning of words look kind of like the humps on the back of a camel. Camel case is a defacto style in JavaScript. Why does this matter? JavaScript is case sensitive. That means that <code>myAwesomeVariable</code> is distinct from <code>myawesomevariable</code> so you could use both in the same script. Don&rsquo;t use both, you will only confuse yourself in the future.</p>
+
+<p>The other thing to note is that the statement ends with a semi-colon. The semi-colon at the end of the statement tells the browser that the statement is complete. You don&rsquo;t always need to put a semi-colon at the end of a statement as the interpretter will try its best to guess your intent and insert them for you automatically. In practice it is better to explicitly define your semi-colons.</p>
+
+<p>What would make our awesome variable more awesome? How about assigning it a value? We can do that like this:</p>
+
+<pre><code class="language-js">myAwesomeVariable = 'Learn to Code';
+</code></pre>
+
+<p>In this statement you&rsquo;ll notice the equal sign. This is called the assignment operator. It takes the value to the right of the equal sign and assigns it to the variable to the left of it.</p>
+
+<p>If you want to create a variable and immediately assign it a value you can do that too:</p>
+
+<pre><code class="language-js">var myAwesomeVariable = 'Learn to Code';
+</code></pre>
+
+<p>You can retreive the value in a variable just by calling it. For example, if you enter the prevous statement in the console of your browser, you can print the value by entering this in the console:</p>
+
+<pre><code class="language-js">myAwesomeVariable;
+</code></pre>
+
+<p>You can change the value within a variable as well, we call this mutation. If you hear people talking about mutable vs immutable this is related. Mutable means the value can change, whereas immutable means that it cannot.</p>
+
+<pre><code class="language-js">var myAwesomeVariable = 'Learn to Code';
+myAwesomeVariable = 'Grand Rapids';
+</code></pre>
+
+<p>Variables have datatypes. The examples we have looked at so far have all been <code>string</code>, but there are a few other core types:</p>
+
+<p>| Variable      | Explanation                                                                                                      | Example                                      |<br />
+| &mdash;&mdash;&mdash;&mdash;- | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;- | &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash; |<br />
+| String  | A string is text, think something like your name or address. It has to be enclosed in quotes. | <code>var myAwesomeVariable = 'Learn to Code';</code> |<br />
+| Number  | A number, think you age or zip code | <code>var myAwesomeVariable = 10;</code> |<br />
+| Boolean | A True/False value, <code>true</code> and <code>false</code> are keywords, not strings so you don&rsquo;t need quotes | <code>var myAwesomeVariable = true;</code> |<br />
+| Array   | A data structure that contains values, think shopping list | <code>var myVariable = ['Banana','Peanut Butter','Wonderbread','Quantumgemerald'];</code> |<br />
+| Object |  Anything. All variables in JavaScript are technically objects, there are further implications to this but we will not discuss them here. | |</p>
+
+<h3 id="operators">Operators</h3>
+
+<p>We have already talked about operators a little, we looked at the assignment operator, <code>=</code>, while discussing variables. An operator is a mathematical symbol that takes two values (that can be contained in variables) and produces some kind of result.</p>
+
+<p><code>-</code>, <code>/</code>, and <code>*</code> are basic math operators and do what you would expect.</p>
+
+<p><code>+</code> is a little more complicated, because in the context of numbers it performs addition as you would expect, but in the contains of strings it appends them together, we call this string concatenation.</p>
+
+<p>From here things get a little weird. <code>===</code> is the equality operator. It checks two values and evaluates if they are equal. You may also so <code>==</code> in code. This is the <em>loose</em> equality operator, it works in a way that is less predicable. When in doubt use strict equality with <code>===</code>.</p>
+
+<p><code>!</code> is the not operator. It can be used to invert the truthiness of a statement. By extention <code>!==</code> is the strict inequality operator. It checks to make sure that two values are not equal.</p>
+
+<p>There are more operators, but these should cover most cases you will run across.</p>
+
+<p>Mixing data types can yield all kinds of fun and interesting results&hellip;unless you&rsquo;re trying to debug them. JavaScript is a dynamic language, which allows you to intermix values of different types. The interpretter will do its best to infer your intent when data types mix. For example, if you do something like <code>&quot;10&quot; + 5</code> you may think the result would be <code>15</code>, but since <code>&quot;10&quot;</code> is a string the interpretter will think you want to do string concatenation and convert <code>5</code> to <code>&quot;5&quot;</code> automatically. We call this type coersion.</p>
+
+<h3 id="conditionals">Conditionals</h3>
+
+<p><a href="https://introcs.cs.princeton.edu/java/13flow/Flip.java.html">https://introcs.cs.princeton.edu/java/13flow/Flip.java.html</a></p>
+
+<h3 id="loops">Loops</h3>
+
+<p><a href="https://introcs.cs.princeton.edu/java/13flow/PowersOfTwo.java.html">https://introcs.cs.princeton.edu/java/13flow/PowersOfTwo.java.html</a></p>
+
+<h3 id="functions">Functions</h3>
+
+<p><a href="https://introcs.cs.princeton.edu/java/21function/FunctionExamples.java.html">https://introcs.cs.princeton.edu/java/21function/FunctionExamples.java.html</a></p>
+
+<p>===============</p>
+
+<h3 id="conditionals-1">Conditionals</h3>
+
+<p>Conditionals are code structures which allow you to test if an expression returns true or not, running alternative code revealed by its result. A very common form of conditionals is the <code>if ... else</code> statement. For example:</p>
+
+<pre><code>var iceCream = 'chocolate';
+if (iceCream === 'chocolate') {
+  alert('Yay, I love chocolate ice cream!');    
+} else {
+  alert('Awwww, but chocolate is my favorite...');    
+}
+</code></pre>
+
+<p>The expression inside the <code>if ( ... )</code> is the test — this uses the identity operator (as described above) to compare the variable <code>iceCream</code> with the string <code>chocolate</code> to see if the two are equal. If this comparison returns <code>true</code>, the first block of code is run. If the comparison is not true, the first block is skipped and the second code block, after the <code>else</code> statement, is run instead.</p>
+
+<h3 id="functions-1">Functions</h3>
+
+<p>[Functions][24] are a way of packaging functionality that you wish to reuse. When you need the procedure you can call a function, with the function name, instead of rewriting the entire code each time. You have already seen some uses of functions above, for example:</p>
+
+<ol>
+<li><p>var myVariable = document.querySelector(&lsquo;h1&rsquo;);</p></li>
+
+<li><p>alert(&lsquo;hello!&rsquo;);</p></li>
+</ol>
+
+<p>These functions, <code>document.querySelector</code> and <code>alert</code>, are built into the browser for you to use whenever you desire.</p>
+
+<p>If you see something which looks like a variable name, but has parentheses — <code>()</code> — after it, it is likely a function. Functions often take [arguments][25] — bits of data they need to do their job. These go inside the parentheses, separated by commas if there is more than one argument.</p>
+
+<p>For example, the <code>alert()</code> function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what to write in the pop-up box.</p>
+
+<p>The good news is you can define your own functions — in this next example we write a simple function which takes two numbers as arguments and multiplies them:</p>
+
+<pre><code>function multiply(num1,num2) {
+  var result = num1 * num2;
+  return result;
+}
+</code></pre>
+
+<p>Try running the above function in the console, then test with several arguments. For example:</p>
+
+<pre><code>multiply(4,7);
+multiply(20,20);
+multiply(0.5,3);
+</code></pre>
+
+<p><strong>Note</strong>: The [<code>return</code>][26] statement tells the browser to return the <code>result</code> variable out of the function so it is available to use. This is necessary because variables defined inside functions are only available inside those functions. This is called variable [scoping][27]. (Read [more on variable scoping][28].)</p>
+
+<h3 id="events">Events</h3>
+
+<p>Real interactivity on a website needs events. These are code structures which listen for things happening in browser, running code in response. The most obvious example is the [click event][29], which is fired by the browser when you click on something with your mouse. To demonstrate this, enter the following into your console, then click on the current webpage:</p>
+
+<pre><code>document.querySelector('html').onclick = function() {
+    alert('Ouch! Stop poking me!');
+}
+</code></pre>
+
+<p>There are many ways to attach an event to an element. Here we select the <code>&lt;[html&gt;</code>][30] element, setting its [<code>onclick][31]</code> handler property equal to an anonymous (i.e. nameless) function, which contains the code we want the click event to run.</p>
+
+<p>Note that</p>
+
+<pre><code>document.querySelector('html').onclick = function() {};
+</code></pre>
+
+<p>is equivalent to</p>
+
+<pre><code>var myHTML = document.querySelector('html');
+myHTML.onclick = function() {};
+</code></pre>
+
+<p>It&rsquo;s just shorter.</p>
+
+<h2 id="supercharging-our-example-website">Supercharging our example website</h2>
+
+<p>Now we&rsquo;ve gone over a few JavaScript basics, let&rsquo;s add a few cool features to our example site to see what is possible.</p>
+
+<h3 id="adding-an-image-changer">Adding an image changer</h3>
+
+<p>In this section, we&rsquo;ll add an additional image to our site using some more DOM API features, using some JavaScript to switch between the two when the image is clicked.</p>
+
+<ol>
+<li>First of all, find another image you&rsquo;d like to feature on your site. Be sure it is the same size as the first image, or as close as possible.</li>
+<li>Save this image in your <code>images</code> folder.</li>
+<li>Rename this image &lsquo;firefox2.png&rsquo; (without quotes).</li>
+
+<li><p>Go to your <code>main.js</code> file, and enter the following JavaScript. (If your &ldquo;hello world&rdquo; JavaScript is still there, delete it.)</p>
+
+<pre><code>var myImage = document.querySelector('img');
+</code></pre>
+
+<p>myImage.onclick = function() {
+    var mySrc = myImage.getAttribute(&lsquo;src&rsquo;);
+    if(mySrc === &lsquo;images/firefox-icon.png&rsquo;) {
+      myImage.setAttribute (&lsquo;src&rsquo;,&lsquo;images/firefox2.png&rsquo;);
+    } else {
+      myImage.setAttribute (&lsquo;src&rsquo;,&lsquo;images/firefox-icon.png&rsquo;);
+    }
+}</p></li>
+
+<li><p>Save all files and load <code>index.html</code> in the browser. Now when you click the image, it should change to the other one!</p></li>
+</ol>
+
+<p>You store a reference to your <code>&lt;[img&gt;</code>][32] element in the <code>myImage</code> variable. Next, you make this variable&rsquo;s <code>onclick</code> event handler property equal to a function with no name (an &ldquo;anonymous&rdquo; function). Now, every time this element is clicked:</p>
+
+<ol>
+<li>You retrieve the value of the image&rsquo;s <code>src</code> attribute.</li>
+<li>You use a conditional to check whether the <code>src</code> value is equal to the path to the original image:
+
+<ol>
+<li>If it is, you change the <code>src</code> value to the path to the 2nd image, forcing the other image to be loaded inside the <code>&lt;[img&gt;</code>][32] element.</li>
+<li>If it isn&rsquo;t (meaning it must already have changed), the <code>src</code> value swaps back to the original image path, to the original state.</li>
+</ol></li>
+</ol>
+
+<h3 id="adding-a-personalized-welcome-message">Adding a personalized welcome message</h3>
+
+<p>Next we will add another bit of code, changing the page&rsquo;s title to a personalized welcome message when the user first navigates to the site. This welcome message will persist, should the user leave the site and later return — we will save it using the [Web Storage API][33]. We will also include an option to change the user and, therefore, the welcome message anytime it is required.</p>
+
+<ol>
+<li><p>In <code>index.html</code>, add the following line just before the <code>&lt;[script&gt;</code>][10] element:</p>
+
+<pre><code>Change user
+</code></pre></li>
+
+<li><p>In <code>main.js</code>, place the following code at the bottom of the file, exactly as written — this takes references to the new button and the heading, storing them inside variables:</p>
+
+<pre><code>var myButton = document.querySelector('button');
+</code></pre>
+
+<p>var myHeading = document.querySelector(&lsquo;h1&rsquo;);</p></li>
+
+<li><p>Now add the following function to set the personalized greeting — this won&rsquo;t do anything yet, but we&rsquo;ll fix this in a moment:</p>
+
+<pre><code>function setUserName() {
+</code></pre>
+
+<p>var myName = prompt(&lsquo;Please enter your name.&rsquo;);
+  localStorage.setItem(&lsquo;name&rsquo;, myName);
+  myHeading.textContent = &lsquo;Mozilla is cool, &rsquo; + myName;
+}</p></li>
+</ol>
+
+<p>This function contains a [<code>prompt()</code>][34] function, which brings up a dialog box, a bit like <code>alert()</code>. This <code>prompt()</code>, however, asks the user to enter some data, storing it in a variable after the user presses <strong>OK</strong><em>.</em> In this case, we are asking the user to enter their name. Next, we call on an API called <code>localStorage</code>, which allows us to store data in the browser and later retrieve it. We use localStorage&rsquo;s <code>setItem()</code> function to create and store a data item called <code>'name'</code>, setting its value to the <code>myName</code> variable which contains the data the user entered. Finally, we set the <code>textContent</code> of the heading to a string, plus the user&rsquo;s newly stored name.
+4. Next, add this <code>if ... else</code> block — we could call this the initialization code, as it structures the app when it first loads:</p>
+
+<pre><code>    if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  var storedName = localStorage.getItem('name');
+  myHeading.textContent = 'Mozilla is cool, ' + storedName;
+}
+</code></pre>
+
+<p>This block first uses the negation operator (logical NOT, represented by the !) to check whether the <code>name</code> data exists. If not, the <code>setUserName()</code> function is run to create it. If it exists (that is, the user set it during a previous visit), we retrieve the stored name using <code>getItem()</code> and set the <code>textContent</code> of the heading to a string, plus the user&rsquo;s name, as we did inside <code>setUserName()</code>.
+5. Finally, put the below <code>onclick</code> event handler on the button. When clicked, the <code>setUserName()</code> function is run. This allows the user to set a new name, when they wish, by pressing the button:</p>
+
+<pre><code>    myButton.onclick = function() {
+  setUserName();
+}
+</code></pre>
+
+<p>Now when you first visit the site, it will ask you for your username, then give you a personalized message. You can change the name any time you like by pressing the button. As an added bonus, because the name is stored inside localStorage, it persists after the site is closed down, keeping the personalized message there when you next open the site!</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>If you have followed all the instructions in this article, you should end up with a page that looks something like this (you can also [view our version here][35]):</p>
+
+<p>![][36]</p>
+
+<p>If you get stuck, you can compare your work with our [finished example code on GitHub][37].</p>
+
+<p>We have barely scratched the surface of JavaScript. If you have enjoyed playing, and wish to advance even further, head to our [JavaScript learning topic][5].</p>
+
+    </div>
+
+			
+		</div>
+
+</body>
+</html>

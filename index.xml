@@ -154,5 +154,15 @@ Sign up or Login if you already have an account.
 Conga Conga provides an aggregated calendar for tech events happening in the area.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://ltcgr.com/blog/2017/12/javascript-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://ltcgr.com/blog/2017/12/javascript-basics/</guid>
+      <description>JavaScript Basics This workshop is heavily influenced by &amp;ldquo;JavaScript Basics - Learn Web Development&amp;rdquo; by MDN.
+JavaScript is one of the most widely used programming languages today. If you&amp;rsquo;ve viewed a webpage there is a good chance it used JavaScript. The objective of this workshop is to take you through the steps necessary to setup a basic sandbox to experiment with JavaScript, and to learn just enough JavaScript to be dangerous.</description>
+    </item>
+    
   </channel>
 </rss>
