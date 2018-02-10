@@ -6,10 +6,20 @@
     <description>Recent content in C# on Learn to Code Grand Rapids</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Aug 2017 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 09 Feb 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://ltcgr.com/tags/c#/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>File I/O and Exceptions Meetup Notes</title>
+      <link>http://ltcgr.com/blog/2018/file-io-exceptions/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 -0400</pubDate>
+      
+      <guid>http://ltcgr.com/blog/2018/file-io-exceptions/</guid>
+      <description>In our discussion of File I/O and Exceptions in C# sharp there were three major take aways:
+ Exception handling should only be used when necessary, because it is not free. When dealing with File I/O use the static methods of File and Directory when possible. Build your own I/O class that wraps the framework classes so that you can easily test for exceptions.  Exception Handling Exceptions, and exception handling adds overhead to your applications since they span functions by their nature.</description>
+    </item>
     
     <item>
       <title>Real World Application Development - Part 1 - Notes</title>

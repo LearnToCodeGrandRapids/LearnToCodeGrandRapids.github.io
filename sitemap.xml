@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ltcgr.com/blog/2018/file-io-exceptions/</loc>
+    <lastmod>2018-02-09T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://ltcgr.com/blog/2017/08/max-column-sum-by-key-notes-part1/</loc>
     <lastmod>2017-08-10T00:00:00-04:00</lastmod>
   </url>
@@ -72,13 +77,13 @@
   
   <url>
     <loc>http://ltcgr.com/blog/</loc>
-    <lastmod>2017-08-10T00:00:00-04:00</lastmod>
+    <lastmod>2018-02-09T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://ltcgr.com/tags/c#/</loc>
-    <lastmod>2017-08-10T00:00:00-04:00</lastmod>
+    <lastmod>2018-02-09T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -95,25 +100,25 @@
   
   <url>
     <loc>http://ltcgr.com/categories/languages/</loc>
-    <lastmod>2017-08-10T00:00:00-04:00</lastmod>
+    <lastmod>2018-02-09T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://ltcgr.com/</loc>
-    <lastmod>2017-08-10T00:00:00-04:00</lastmod>
+    <lastmod>2018-02-09T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://ltcgr.com/categories/software-design/</loc>
-    <lastmod>2017-08-10T00:00:00-04:00</lastmod>
+    <lastmod>2018-02-09T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://ltcgr.com/tags/</loc>
-    <lastmod>2017-08-10T00:00:00-04:00</lastmod>
+    <lastmod>2018-02-09T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
