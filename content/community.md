@@ -4,15 +4,15 @@ title = "Community"
 menu = "main"
 +++
 
-We are very lucky to have such a thriving tech community in West Michigan. 
+We are very lucky to have such a thriving tech community in West Michigan.
 
 ## Get Connected
 
 ### Slack
 
-On the Grand Rapids Slack server you will find many tech channels, including one for this group (#learn-to-code). Here you can interact with other living, breathing humans in our area. 
+On the Grand Rapids Slack server you will find many tech channels, including one for this group (#learn-to-code). Here you can interact with other living, breathing humans in our area.
 
-[Sign up](http://slackin-grandrapids.herokuapp.com/) or [Login](https://grandrapids.slack.com) if you already have an account.
+[Sign up](https://join.slack.com/t/grandrapids/shared_invite/enQtNTg5OTMyOTA0ODUyLTQxMGJmNjhmNmM4MDQ1M2Y2N2ZjNzUxMWMyOTYyZmFhMzdlZDBjYThiYTRjMjk5ODE5ODMyNDg2Y2ZhMTE5NmE) or [Login](https://grandrapids.slack.com) if you already have an account.
 
 ### Conga
 
@@ -58,7 +58,7 @@ Conga provides an aggregated calendar for tech events happening in the area. Thi
 
 ### [Girl Develop It Grand Rapids](https://www.meetup.com/Girl-Develop-It-Grand-Rapids/)
 
-> Women Developers and Programmers! Want to learn how to code? Have a great idea? Don't be shy. Develop it. 
+> Women Developers and Programmers! Want to learn how to code? Have a great idea? Don't be shy. Develop it.
 
 > It can be intimidating for women to learn and ask questions when they are in an extreme minority. While open and welcoming, today's budding developer community is up to 91% male. There isn't a comfortable place where women can learn at their own pace and not be afraid to ask "stupid questions."
 
@@ -66,7 +66,7 @@ Conga provides an aggregated calendar for tech events happening in the area. Thi
 
 ### [GR CocoaHeads](https://www.meetup.com/GR-Cocoa-Heads/)
 
-> CocoaHeads is a group devoted to discussion of Apple Computer's Cocoa and CocoaTouch Frameworks for programming on MacOS X and iOS. During monthly meetings, members present on their projects and offer tutorials on various programming topics. 
+> CocoaHeads is a group devoted to discussion of Apple Computer's Cocoa and CocoaTouch Frameworks for programming on MacOS X and iOS. During monthly meetings, members present on their projects and offer tutorials on various programming topics.
 
 ### [GR Drupal Users](http://www.meetup.com/grupal/)
 
@@ -102,7 +102,7 @@ Conga provides an aggregated calendar for tech events happening in the area. Thi
 
 ### [GR Testers](http://www.meetup.com/GR-Testers/)
 
-> We're a bunch of software testers. We like to get together over a meal and talk about testing and general geekery. We meet sometime in the 2nd or 3rd week of the month. 
+> We're a bunch of software testers. We like to get together over a meal and talk about testing and general geekery. We meet sometime in the 2nd or 3rd week of the month.
 
 ### [GR Web Development](http://www.meetup.com/grwebdev/)
 
@@ -130,7 +130,7 @@ This is our group. Come join us at our next meetup!.
 
 ### [The West Michigan Cisco User Group](http://www.wmcug.org/)
 
-> The West Michigan Cisco User Group (WMCUG) is a non-profit, independent users group which is dedicated to the open exchange of information in the fields of internetworking and the advanced technologies that support the business goals of an organization. WMCUG focus will primarily, but not exclusively be devoted to Cisco products and solutions. Within this framework, we build a community to share best practices and provide a forum for members to grow as individual contributors in the technology arena. 
+> The West Michigan Cisco User Group (WMCUG) is a non-profit, independent users group which is dedicated to the open exchange of information in the fields of internetworking and the advanced technologies that support the business goals of an organization. WMCUG focus will primarily, but not exclusively be devoted to Cisco products and solutions. Within this framework, we build a community to share best practices and provide a forum for members to grow as individual contributors in the technology arena.
 
 ### [West Michigan Cloud Computing](http://www.meetup.com/West-Michigan-Cloud-Computing/)
 
